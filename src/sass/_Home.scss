@@ -1,0 +1,18 @@
+.container-home {
+  &__hero {
+    margin-block-start: -5.9rem;
+    block-size: 512px;
+    background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    // background-size: cover;
+    // background-position: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-home {
+    &__hero {
+    block-size: 768px;
+    background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    }
+  }
+}
