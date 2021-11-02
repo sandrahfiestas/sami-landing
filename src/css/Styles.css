@@ -30,12 +30,17 @@
 
 html {
   font-size: 62.5%;
+  --bs-body-bg: #000000;
 }
 
 body {
   --bs-body-font-size: 1.4rem;
   --bs-body-font-family: Montserrat;
   --bs-body-color: #0F3041;
+  --bs-body-bg: #000000;
+}
+body p {
+  margin-bottom: 0;
 }
 
 .container-navbar {
@@ -116,13 +121,100 @@ body {
 .container-home__hero {
   margin-block-start: -5.9rem;
   block-size: 512px;
-  background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+  background-image: url("../images/background-mobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-home__hero-title {
+  color: #ffffff;
+  padding-inline: 8px;
+  padding-block-start: 10.4rem;
+}
+.container-home__hero-title-hi {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.container-home__hero-title h1 {
+  display: none;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+.container-home__hero-title-description {
+  display: none;
+  margin-block-start: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.container-home__hero-title button {
+  display: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-block-start: 22px;
+  margin-inline: auto;
+}
+.container-home__main {
+  display: none;
+  border: 1px solid red;
+}
+.container-home__main-wrapperTop {
+  border: 1px solid yellow;
+  max-inline-size: 1063px;
+  margin: auto;
+}
+.container-home__main-wrapperTop-content {
+  border: 1px solid blue;
+  block-size: 1616px;
+  inline-size: 327px;
+  background: #ffffff;
+  margin: auto;
+}
+.container-home__main .content-descubre-itemSubtitulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #466EFE;
+}
+.container-home__main .content-descubre-logoTipo {
+  height: 30.54px;
+  width: 91.98px;
+  margin-block-start: 12px;
+  margin-block-end: 15.46px;
+}
+.container-home__main .content-descubre-subtitulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.container-home__main .content-descubre-description {
+  line-height: 1.7rem;
+  block-size: 75px;
+  inline-size: 247px;
+  margin-block-start: 2px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 480px) {
   .container-home__hero {
     block-size: 768px;
-    background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    background-image: url("../images/background-desktop.jpg");
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-home__hero-title {
+    max-inline-size: 791px;
+    margin: auto;
+    text-align: center;
+    padding-block-start: 123px;
+  }
+  .container-home__hero-title-hi {
+    font-size: 1.2rem;
+  }
+  .container-home__hero-title h1 {
+    margin-block-start: 18px;
+  }
+  .container-home__hero-title-description {
+    margin-block-start: 3rem;
   }
 }
 
