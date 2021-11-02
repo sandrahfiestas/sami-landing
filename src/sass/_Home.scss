@@ -2,17 +2,114 @@
   &__hero {
     margin-block-start: -5.9rem;
     block-size: 512px;
-    background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
-    // background-size: cover;
-    // background-position: right;
+    background-image: url("../images/background-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    &-title {
+      color: $white;
+      padding-inline: 8px;
+      padding-block-start: 10.4rem;
+      &-hi {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+      h1 {
+        display: none;
+        font-size: 35px;
+        font-weight: 700;  
+        line-height: 3.5rem;      
+      }
+      &-description {
+        display: none;
+        margin-block-start: 1.5rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+      }
+      button {
+        display: none;
+        // @include base_btn (31px, 137px);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        margin-block-start: 22px;
+        margin-inline : auto;
+      }
+    }
+  }
+
+  &__main {
+    display: none;
+    border: 1px solid red;
+    &-wrapperTop {
+      border: 1px solid yellow;
+      max-inline-size: 1063px;
+      margin: auto;
+      &-content {
+        border: 1px solid blue;
+        block-size: 1616px;
+        inline-size: 327px;
+        background: $white;
+        margin: auto;
+      }
+    }
+    .content-descubre {
+      &-itemSubtitulo {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #466EFE;
+      }
+      &-logoTipo {
+        height: 30.54px;
+        width: 91.98px;
+        margin-block-start: 12px;
+        margin-block-end: 15.46px;
+      }
+      &-subtitulo {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      &-description {
+        line-height: 1.7rem;
+        block-size: 75px;
+        inline-size: 247px;
+        margin-block-start: 2px;
+      }
+
+    }
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 480px) {
   .container-home {
     &__hero {
     block-size: 768px;
-    background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    background-image: url("../images/background-desktop.jpg");
+    background-size: contain;
+    // background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-home {
+    &__hero {
+      &-title {
+        max-inline-size: 791px;
+        margin: auto;
+        text-align: center;
+        padding-block-start: 123px;
+        &-hi {
+          font-size: 1.2rem;
+        }
+        h1 {
+          margin-block-start: 18px;
+        }
+        &-description {
+          margin-block-start: 3rem;
+        }
+      }
     }
   }
 }
