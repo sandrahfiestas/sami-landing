@@ -1,0 +1,56 @@
+// == PALETA == //
+
+// == GLOBALES == //
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  --bs-body-font-size: 1.4rem;
+  --bs-body-font-family: Montserrat;
+  --bs-body-color: #0F3041;
+}
+
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// == MIXIS == //
+
+
