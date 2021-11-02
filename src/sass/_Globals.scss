@@ -1,4 +1,9 @@
 // == PALETA == //
+$primary-blue : #0F3041;
+$primary-red: #FF3355; //rgba(255, 51, 85, 1)
+$secondary-red : #D70025;
+$white : #ffffff;
+$black : #000000;
 
 // == GLOBALES == //
 @font-face {
@@ -38,19 +43,33 @@
 html {
   // scroll-behavior: smooth;
   font-size: 62.5%;
+  --bs-body-bg: #000000;
 }
 
 body {
   --bs-body-font-size: 1.4rem;
   --bs-body-font-family: Montserrat;
   --bs-body-color: #0F3041;
+  --bs-body-bg: #000000;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
-// a {
-//   color: inherit;
-//   text-decoration: none;
-// }
-
 // == MIXIS == //
+
+// == MIXIN botón == //
+@mixin base_btn($height, $width) {
+  height: $height;
+  width: $width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary-red;
+  color: $white;
+  border-radius: 5px;
+  border: 2px solid $primary-red;
+}
 
 
