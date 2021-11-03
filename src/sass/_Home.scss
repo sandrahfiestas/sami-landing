@@ -1,4 +1,16 @@
 .container-home {
+  button {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .btnActive {
+    background: $secondary-red;
+  }
+  .btnNoActive {
+    background: none;     
+  }
+
   &__hero {
     margin-block-start: -5.9rem;
     block-size: 512px;
@@ -15,23 +27,18 @@
         font-weight: 700;
       }
       h1 {
-        display: none;
+        margin-block-start: 1.5rem;
         font-size: 35px;
         font-weight: 700;  
         line-height: 3.5rem;      
       }
       &-description {
-        display: none;
         margin-block-start: 1.5rem;
         font-weight: 400;
         line-height: 1.8rem;
       }
       button {
-        display: none;
-        // @include base_btn (31px, 137px);
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.03em;
+        @include base_btn (31px, 137px);
         margin-block-start: 22px;
         margin-inline : auto;
       }
@@ -39,21 +46,54 @@
   }
 
   &__main {
-    display: none;
-    border: 1px solid red;
+    // border: 1px solid red;
+    margin-block-start: -35px;
     &-wrapperTop {
-      border: 1px solid yellow;
+      // border: 1px solid yellow;
       max-inline-size: 1063px;
       margin: auto;
+      
       &-content {
-        border: 1px solid blue;
+        // border: 1px solid blue;
         block-size: 1616px;
-        inline-size: 327px;
         background: $white;
-        margin: auto;
+        border-radius: 10px;
+        margin-inline: 16px;
+        background-image:  url("../images/background-skyblue.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 329px;
+        background-size: auto 940.19px;
       }
     }
     .content-descubre {
+      padding-block-start: 56px;
+      padding-inline-start: 11px;
+      position: relative;
+      &__options {
+        top: -20px;
+        block-size: 54px;
+        inline-size: 304px;
+        position: absolute;
+        padding-block: 3px;
+        padding-inline: 4px;
+        display: flex;
+        justify-content: space-between;
+        background: #FFCDD3;
+        border-radius: 8px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        &-option {
+          block-size: 46.96px;
+          inline-size: 60px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
       &-itemSubtitulo {
         font-size: 1.1rem;
         font-weight: 700;
@@ -65,18 +105,10 @@
         margin-block-start: 12px;
         margin-block-end: 15.46px;
       }
-      &-subtitulo {
-        font-size: 2.8rem;
-        font-weight: 700;
-        line-height: 30px;
+      button {
+        @include base_btn (31px, 132px);
+        margin-block-start: -5px;
       }
-      &-description {
-        line-height: 1.7rem;
-        block-size: 75px;
-        inline-size: 247px;
-        margin-block-start: 2px;
-      }
-
     }
   }
 }
@@ -88,6 +120,9 @@
     background-image: url("../images/background-desktop.jpg");
     background-size: contain;
     // background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    }
+    &__main {
+      margin-block-start: -337px;
     }
   }
 }
@@ -109,6 +144,49 @@
         &-description {
           margin-block-start: 3rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-home {
+    .content-descubre {
+      padding-block-start: 55px;
+      padding-inline-start: 74px;
+      padding-inline-end: 34px;
+      &__options {
+        margin: 1px solid blue;
+        block-size: 51px;
+        inline-size: 254px;
+        padding-block: 6px;
+        padding-inline: 6px;
+        transform: rotate(90deg);
+        top: 162px;
+        right: auto;
+        left: -140px;
+        &-option {
+          block-size: 40px;
+          inline-size: 40px;
+          img {
+            width: 75%;
+            transform: rotate(-90deg);
+          }
+        }
+      }
+      &-itemSubtitulo {
+        font-size: 1.2rem;
+      }
+      &-logoTipo {
+        margin-block-start: 28px;
+        margin-block-end: 28.46px;
+      }
+      button {
+        @include base_btn (52px, 193px);
+        margin-block-start: -188px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
       }
     }
   }
