@@ -1,8 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import logoTipoIcon from '../images/svg/logo-tipo-color.svg'
+import OptionGestiona from '../components/OptionGestiona';
+import OptionSolicitud from '../components/OptionSolicitud';
+import OptionBusqueda from '../components/OptionBusqueda';
+import OptionJurisprudencia from '../components/OptionJurisprudencia';
+import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
+import eyeRedIcon from '../images/eye-red.png';
+import fileTextRedIcon from '../images/fileText-red.png';
+import searchRedIcon from '../images/search-red.png';
+import hamburgRedIcon from '../images/hambur-red.png';
+import eyeWhiteIcon from '../images/eye-white.png';
+import fileTextWhiteIcon from '../images/fileText-white.png';
+import searchWhiteIcon from '../images/search-white.png';
+import hamburgWhiteIcon from '../images/hambur-white.png';
 
 function Home() {
+  const [showGestiona, setShowGestiona] = useState(true);
+  const [showSolicitud, setShowSolicitud] = useState(false);
+  const [showBusqueda, setShowBusqueda] = useState(false);
+  const [showJurisprudencia, setShowJurisprudencia] = useState(false);
+
+  const handleBtnGestiona = () => {
+    setShowSolicitud(false);
+    setShowBusqueda(false);
+    setShowJurisprudencia(false);
+    setShowGestiona(true);
+  }
+
+  const handleBtnSolicitud = () => {
+    setShowGestiona(false);
+    setShowBusqueda(false);
+    setShowJurisprudencia(false);
+    setShowSolicitud(true);
+  }
+
+  const handleBtnBusqueda = () => {
+    setShowSolicitud(false);
+    setShowGestiona(false);
+    setShowJurisprudencia(false);
+    setShowBusqueda(true);
+  }
+
+  const handleBtnJurisprudencia = () => {
+    setShowSolicitud(false);
+    setShowGestiona(false);
+    setShowBusqueda(false);
+    setShowJurisprudencia(true)
+  }
+
   return (
     <div className="container-home">
       <Navbar />
@@ -18,18 +63,27 @@ function Home() {
         <div className="container-home__main-wrapperTop">
           <div className="container-home__main-wrapperTop-content">
             <section className="content-descubre">
+              <div className="content-descubre__options">
+                <div className={showGestiona ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnGestiona}>
+                  <img src={showGestiona ? eyeWhiteIcon : eyeRedIcon} alt="icono ojo" />
+                </div>
+                <div className={showSolicitud ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnSolicitud}>
+                  <img src={showSolicitud ? fileTextWhiteIcon : fileTextRedIcon} alt="icono texto" />
+                </div>
+                <div className={showBusqueda ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnBusqueda}>
+                  <img src={showBusqueda ? searchWhiteIcon : searchRedIcon} alt="icono lupa" />
+                </div>
+                <div className={showJurisprudencia ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnJurisprudencia}>
+                  <img src={showJurisprudencia ? hamburgWhiteIcon : hamburgRedIcon} alt="icono menu" />
+                </div>
+              </div>
               <p className="content-descubre-itemSubtitulo">DESCUBRE CÓMO</p>
               <img src={logoTipoIcon} alt="logo-tipo" className="content-descubre-logoTipo" />
-              <h2 className="content-descubre-subtitulo">Gestiona tus casos, actuaciones y vencimientos</h2>
-              <p className="content-descubre-description">Lleva un control de tu cartera, monitorea el proceso de tus casos y analiza el impacto del riesgo de las inspecciones a cargo.</p>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-              </div>
-              <img src="" alt="" />
-              <div>
-                <button>Solicita una demo</button>
-              </div>
+               {showGestiona ? <OptionGestiona /> : ''}
+               {showSolicitud ? <OptionSolicitud /> : ''}
+               {showBusqueda ? <OptionBusqueda /> : ''}
+               {showJurisprudencia ? <OptionJurisprudencia /> : ''}
+              <button>Solicita una demo</button>
             </section>
           </div>
         </div>
