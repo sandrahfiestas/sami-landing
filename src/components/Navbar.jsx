@@ -22,7 +22,7 @@ function NavBar() {
 
   return (
     <div className="container-navbar">
-    <Navbar clasName="navbar" id="navbar" collapseOnSelect expand="lg">
+    <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
         <img src={logoTipoIcon} alt="logo Sami" />
