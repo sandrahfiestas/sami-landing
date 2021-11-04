@@ -1,0 +1,99 @@
+.content-insights {
+  padding-block-start: 55px;
+  padding-inline-start: 11px; 
+  .subtitulo {
+    inline-size: 269.81px;
+  }
+
+  &__textSimbolo {
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-block-start: 14px;
+    margin-block-end: 14px;
+    img {
+      block-size: 21.84px;
+      inline-size: 21.33px;
+      margin-inline-start: 6px;
+    }
+  }
+  &__description {
+    block-size: 264px;
+    position: relative;
+    &-text {
+      block-size: 102px;
+      inline-size: 156.87px;
+      font-size: 16px;
+      padding-block-start: 3px;
+    }
+    &-cardFunci {
+      block-size: 163px;
+      inline-size: 156.87px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/funci-mobile.png');
+      background-repeat: no-repeat;
+    }
+    &-materias {
+      block-size: 175px;
+      inline-size: 200px;
+      margin-block-start: 30px;
+      background-image: url('../images/materias-m.png');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .content-insights {
+    &__description {
+      &-cardFunci {
+        left: 80px;
+        margin: auto;
+
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-insights {
+    padding-block-start: 121px;
+    &__description {
+      &-cardFunci {
+        block-size: 320px;
+        inline-size: 280px;
+        left: 100px;
+        margin: -187px auto;
+        background-image: url('../images/funci-desktop.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content-insights {
+    .subtitulo {
+      font-size: 32px;
+      inline-size: 310px;
+    }
+    &__textSimbolo {
+      font-size: 16px;
+    }
+    &__description {
+      &-text {
+        inline-size: 265px;
+      }
+      &-materias {
+        block-size: 235px;
+        inline-size: 320px;
+        position: absolute;
+        top: -165px;
+        right: 25px;
+        background-image: url('../images/materias-d.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

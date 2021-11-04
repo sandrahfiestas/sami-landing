@@ -54,6 +54,17 @@ body p {
 .container-home .btnNoActive {
   background: none;
 }
+.container-home .itemSubtitulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #466EFE;
+  margin-block-end: 12px;
+}
+.container-home .subtitulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 30px;
+}
 .container-home__hero {
   margin-block-start: -5.9rem;
   block-size: 512px;
@@ -150,11 +161,11 @@ body p {
   font-size: 1.1rem;
   font-weight: 700;
   color: #466EFE;
+  margin-block-end: 12px;
 }
 .container-home__main .content-descubre-logoTipo {
   height: 30.54px;
   width: 91.98px;
-  margin-block-start: 12px;
   margin-block-end: 15.46px;
 }
 .container-home__main .content-descubre button {
@@ -433,6 +444,93 @@ body p {
   .options-images .container-user {
     margin: 1px solid red;
     margin-block-start: 30px;
+  }
+}
+.content-insights {
+  padding-block-start: 55px;
+  padding-inline-start: 11px;
+}
+.content-insights .subtitulo {
+  inline-size: 269.81px;
+}
+.content-insights__textSimbolo {
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
+}
+.content-insights__textSimbolo img {
+  block-size: 21.84px;
+  inline-size: 21.33px;
+  margin-inline-start: 6px;
+}
+.content-insights__description {
+  block-size: 264px;
+  position: relative;
+}
+.content-insights__description-text {
+  block-size: 102px;
+  inline-size: 156.87px;
+  font-size: 16px;
+  padding-block-start: 3px;
+}
+.content-insights__description-cardFunci {
+  block-size: 163px;
+  inline-size: 156.87px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../images/funci-mobile.png");
+  background-repeat: no-repeat;
+}
+.content-insights__description-materias {
+  block-size: 175px;
+  inline-size: 200px;
+  margin-block-start: 30px;
+  background-image: url("../images/materias-m.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 480px) {
+  .content-insights__description-cardFunci {
+    left: 80px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-insights {
+    padding-block-start: 121px;
+  }
+  .content-insights__description-cardFunci {
+    block-size: 320px;
+    inline-size: 280px;
+    left: 100px;
+    margin: -187px auto;
+    background-image: url("../images/funci-desktop.png");
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content-insights .subtitulo {
+    font-size: 32px;
+    inline-size: 310px;
+  }
+  .content-insights__textSimbolo {
+    font-size: 16px;
+  }
+  .content-insights__description-text {
+    inline-size: 265px;
+  }
+  .content-insights__description-materias {
+    block-size: 235px;
+    inline-size: 320px;
+    position: absolute;
+    top: -165px;
+    right: 25px;
+    background-image: url("../images/materias-d.png");
+    background-repeat: no-repeat;
   }
 }
 

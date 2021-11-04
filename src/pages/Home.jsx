@@ -4,6 +4,7 @@ import OptionGestiona from '../components/OptionGestiona';
 import OptionSolicitud from '../components/OptionSolicitud';
 import OptionBusqueda from '../components/OptionBusqueda';
 import OptionJurisprudencia from '../components/OptionJurisprudencia';
+import Insights from '../components/Insights';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import eyeRedIcon from '../images/eye-red.png';
 import fileTextRedIcon from '../images/fileText-red.png';
@@ -85,6 +86,8 @@ function Home() {
                {showJurisprudencia ? <OptionJurisprudencia /> : ''}
               <button>Solicita una demo</button>
             </section>
+            <Insights />
+
           </div>
         </div>
       </main>

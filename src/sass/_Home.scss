@@ -10,6 +10,17 @@
   .btnNoActive {
     background: none;     
   }
+  .itemSubtitulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #466EFE;
+    margin-block-end: 12px;
+  }
+  .subtitulo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 30px;
+  }
 
   &__hero {
     margin-block-start: -5.9rem;
@@ -101,11 +112,11 @@
         font-size: 1.1rem;
         font-weight: 700;
         color: #466EFE;
+        margin-block-end: 12px;
       }
       &-logoTipo {
         height: 30.54px;
         width: 91.98px;
-        margin-block-start: 12px;
         margin-block-end: 15.46px;
       }
       button {
