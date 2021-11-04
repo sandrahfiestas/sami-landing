@@ -17,6 +17,7 @@
     background-image: url("../images/background-mobile.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
     // background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
     &-title {
       color: $white;
@@ -49,12 +50,12 @@
     // border: 1px solid red;
     margin-block-start: -35px;
     &-wrapperTop {
-      // border: 1px solid yellow;
+      border: 1px solid blue;
       max-inline-size: 1063px;
       margin: auto;
       
       &-content {
-        // border: 1px solid blue;
+        border: 1px solid red;
         block-size: 1616px;
         background: $white;
         border-radius: 10px;
@@ -67,6 +68,8 @@
       }
     }
     .content-descubre {
+      border: 1px solid blue;
+      block-size: 535px;
       padding-block-start: 56px;
       padding-inline-start: 11px;
       position: relative;
@@ -107,7 +110,9 @@
       }
       button {
         @include base_btn (31px, 132px);
-        margin-block-start: -5px;
+        margin-block-start: -25px;
+        position: absolute;
+        bottom: 0;
       }
     }
   }
@@ -183,10 +188,10 @@
       }
       button {
         @include base_btn (52px, 193px);
-        margin-block-start: -188px;
         font-size: 16px;
         font-weight: 700;
         line-height: 19.5px;
+        margin-block-end: 105px;
       }
     }
   }

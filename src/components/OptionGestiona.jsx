@@ -14,9 +14,9 @@ function OptionGestiona() {
         <img src={brujulaIcon} alt="imagen brujula" className="options-images__left-brujula"/>
         <img src={cardCaseIcon} alt="imagen tarjeta" className="options-images__left-cardCase"/>
       </div>
-      {/* <div className="container-user"> */}
+      <div className="container-user">
         <img src={userIcon} alt="imagen usuario" className="options-images-user" />
-      {/* </div> */}
+      </div>
     </div>
     </div>
   )

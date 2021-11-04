@@ -1,6 +1,6 @@
 .options {
   &-subtitulo {
-    inline-size: 332px;
+    // inline-size: 332px;
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 30px;
@@ -35,7 +35,7 @@
     .container-user {
       margin-block-start: -65px;
       block-size: 289px;
-      inline-size: 218px;
+      inline-size: 205px;
       overflow: hidden;
     }
     &-user {
@@ -47,8 +47,53 @@
 
 
 @media screen and (min-width: 480px) {
+  .options {
+    &-subtitulo {
+      // border:  1px solid red;
+      inline-size: 415px;
+    }
+    &-description {
+      // border: 1px solid green;
+      // block-size: 75px;
+      inline-size: 310px;
+    }
+    &-images {
+      // .container-user {
+      //   margin: 1px solid;
+      //   margin-block-start: -100px;
+      //   block-size: 289px;
+      //   inline-size: 205px;
+      // }
+      // &-user {
+      //   block-size: 289px;
+      //   inline-size: 205px;
+      // }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
+  .options {
+    &-subtitulo {
+      // inline-size: 350px;
+    }
+    &-images {
+      &__left {
+        inline-size: 310px;
+        align-items: center;
+      }
+      .container-user {
+        margin: 1px solid red;
+        margin-block-start: -100px;
+        block-size: 388.61px;
+        inline-size: 354.33px;
+        margin-inline-end: 9px;
+      }
+      &-user {
+        block-size: 100%;
+        inline-size: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -56,12 +101,14 @@
     display: flex;
     justify-content: space-between;
     &-subtitulo {
+      inline-size: 332px;
       font-size: 32px;
       line-height: 38px;
     }
     &-description {
       margin-block-start: 14px;
       inline-size: 310px;
+      line-height: 25px;
     }
     &-images {
       // border: 1px solid blue;
@@ -70,7 +117,9 @@
       align-items: flex-end;
       &__left {
         margin-block-start: -77px;
+        inline-size: 440px;
         flex-direction: row-reverse;
+        align-items: flex-start;
         &-brujula {
           margin-block-start: 15px;
           block-size: 49.44px;
@@ -83,11 +132,9 @@
           margin-inline-end: 5px;
         }
       }
-      &-user {
-        block-size: 388.61px;
-        inline-size: 354.33px;
-        margin-block-start: 27px;
-        margin-inline-end: 9px;
+      .container-user {
+        margin: 1px solid red;
+        margin-block-start: 30px;
       }
     }
   }
