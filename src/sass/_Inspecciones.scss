@@ -1,0 +1,102 @@
+.container-inspecciones {
+  margin-block-start: 50px;
+  padding-block-start: 33px;
+  block-size: 344px;
+  padding-inline: 27px 10px;
+  background: #EFF2F9;
+  .content-inspecciones {
+    margin: auto;
+  
+    &__container {
+      margin-block-start: 24px;
+      display: flex;
+      position: relative;
+      &-description {
+        font-size: 1.2rem;
+        line-height: 24px;
+        display: flex;
+        flex-direction: column;
+        button {
+          @include base_btn(31px, 127px)
+        }
+      }
+      &-video {
+        position: absolute;
+        height: 106px;
+        width: 202px;
+        right: 0px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .div-video {
+          height: 104px;
+          width: 162px;
+          position: absolute;
+          top: 2px;
+          top: -4.8px;
+          left: 0;
+          right: 1px;
+          margin: auto;
+          overflow: hidden;
+          border-radius: 5px 5px 0 0;
+  
+          video {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-inspecciones {
+    padding-inline-start: 36px;
+    block-size: 383px;
+    margin-block-start: 70.8px;
+    .content-inspecciones {
+      max-inline-size: 1063px;
+      padding-inline-start: 11px;
+      .itemSubtitulo {
+        font-size: 1.2rem;
+        line-height: 40px;
+      }
+      .subtitulo {
+        inline-size: 442px;
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        margin-block: 12px 24px;
+      }
+      &__container {
+        &-description {
+          p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+          button {
+            @include base_btn(52px, 193px);
+            margin-block-start: 13.16px;
+            font-size: 1.6rem;
+            line-height: 20px;
+            letter-spacing: 3%;
+          }
+        }
+        &-video {
+          height: 325px;
+          width: 665px;
+          top: -185px;
+          right: -89px;
+          .div-video {
+            height: 300px;
+            width: 531px;
+            top: 4px;
+            right: 2px;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ import OptionSolicitud from '../components/OptionSolicitud';
 import OptionBusqueda from '../components/OptionBusqueda';
 import OptionJurisprudencia from '../components/OptionJurisprudencia';
 import Insights from '../components/Insights';
+import Testimonios from '../components/Testimonios';
+import Inspecciones from '../components/Inspecciones';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import eyeRedIcon from '../images/eye-red.png';
 import fileTextRedIcon from '../images/fileText-red.png';
@@ -87,11 +89,11 @@ function Home() {
               <button>Solicita una demo</button>
             </section>
             <Insights />
-
+            <Testimonios />
           </div>
         </div>
+            <Inspecciones />
       </main>
-      {/* <h1 style={{ height: '500px' }}>HOME</h1> */}
     </div>
   );
 }

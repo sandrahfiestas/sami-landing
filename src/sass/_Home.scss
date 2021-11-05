@@ -61,15 +61,15 @@
     // border: 1px solid red;
     margin-block-start: -35px;
     &-wrapperTop {
-      border: 1px solid blue;
+      // border: 1px solid blue;
       max-inline-size: 1063px;
       margin: auto;
       
       &-content {
-        border: 1px solid red;
-        block-size: 1616px;
+        // border: 1px solid red;
+        // block-size: 1616px;
         background: $white;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0 ;
         margin-inline: 16px;
         background-image:  url("../images/background-skyblue.png");
         background-repeat: no-repeat;
@@ -79,7 +79,7 @@
       }
     }
     .content-descubre {
-      border: 1px solid blue;
+      // border: 1px solid blue;
       block-size: 535px;
       padding-block-start: 56px;
       padding-inline-start: 11px;
@@ -172,7 +172,7 @@
       padding-inline-start: 74px;
       padding-inline-end: 34px;
       &__options {
-        margin: 1px solid blue;
+        // margin: 1px solid blue;
         block-size: 51px;
         inline-size: 254px;
         padding-block: 6px;
