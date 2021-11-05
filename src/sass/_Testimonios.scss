@@ -1,0 +1,144 @@
+.content-testimonios {
+  margin-block-start: 30px;
+  padding-inline-start: 11px;
+  padding-inline-end: 11px;
+  padding-block-start: 65px;
+
+  &__slider {
+    padding-block-start: 30px;
+  }
+
+  .slider-container__slider {
+    position: relative;
+    &-square {
+      block-size: 58.24px;
+      inline-size: 58.24px;
+      position: absolute;
+      top: -55px;
+      left: auto;
+      right: 32px;
+    }
+    .carousel {
+      block-size: 370px;
+      // background: pink;
+      .carousel-indicators {
+        button {
+          height: 8.8px;
+          width: 8.8px;
+          border-radius: 50%;
+          border-top: 0;
+          border-bottom: 0;
+          background: #FF3355;
+        }
+      }
+    }
+    &-profile {
+      display: flex;
+      flex-direction: column;
+      &-top {
+        display: flex;
+        &-img {
+          height: 60.51px;
+          width: 61px;
+          margin-inline-end: 14.48px;
+        }
+        span {
+          font-size: 22px;
+          line-height: 48px;
+          font-weight: 700;
+        }
+        p {
+          inline-size: 215.87px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      &-down {
+        margin-block-start: 14px;
+        // block-size: 178px;
+        overflow-y: auto;
+        p {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  .content-testimonios {
+    margin-block-start: 0px;
+    padding-block-start: 0px;
+
+    .itemSubtitulo {
+      font-size: 1.2rem;
+      line-height: 4rem;
+    }
+
+    .subtitulo {
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+    }
+
+    &__slider {
+      padding-block-start: 0px;
+    }
+
+    .slider-container__slider {
+      block-size: 230px;
+      inline-size: 950px;
+      background: #F9FCFF;
+
+      &-square {
+        top: 0;
+        left: -35px;
+        right: auto;
+        bottom: 0;
+        margin: auto;
+      }
+      .carousel {
+        block-size: 277px;
+        .carousel-indicators {
+          button {
+            margin-right: 8.32px;
+            margin-left: 8.32px;
+          }
+        }
+      }
+      &-profile {
+        display: flex;
+        flex-direction: row;
+        block-size: 230px;
+        inline-size: 950px;
+        padding-inline: 61px 56px;
+        &-top {
+          align-items: center;
+          &-img {
+            block-size: 123px;
+            inline-size: 124px;
+            margin-inline-end: 13.31px;
+          }
+          p {
+            width: 207.63px;
+          }
+        }
+        &-down {
+          display: flex;
+          align-items: center;
+          block-size: auto;
+          margin-block-start: 0;
+          p {
+            inline-size: 426px;
+            margin-inline-start: 62px;
+          }
+        }
+      }
+    }
+  }
+}

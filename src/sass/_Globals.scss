@@ -43,17 +43,37 @@ $black : #000000;
 html {
   // scroll-behavior: smooth;
   font-size: 62.5%;
-  --bs-body-bg: #000000;
+  // --bs-body-bg: #000000;
 }
 
 body {
   --bs-body-font-size: 1.4rem;
   --bs-body-font-family: Montserrat;
   --bs-body-color: #0F3041;
-  --bs-body-bg: #000000;
+  // --bs-body-bg: #000000;
 
   p {
     margin-bottom: 0;
+  }
+}
+
+.scroll-style {
+  &::-webkit-scrollbar {
+    width: 5px;               /* ancho de toda la barra de desplazamiento  */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(15, 48, 65, 0.2);
+    border-radius: 5px;       /* color of the tracking area */
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgba(15, 48, 65, 1);    /* color of the scroll thumb */
+    border-radius: 5px;      /* roundness of the scroll thumb */
+
+    &:hover {
+      background: rgba(15, 48, 65, 0.8); 
+    }
   }
 }
 
