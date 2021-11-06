@@ -77,6 +77,16 @@ body {
   }
 }
 
+.btnNoStyle {
+  background: none;
+  border: none;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 // == MIXIS == //
 
 // == MIXIN botón == //

@@ -7,6 +7,7 @@ import OptionJurisprudencia from '../components/OptionJurisprudencia';
 import Insights from '../components/Insights';
 import Testimonios from '../components/Testimonios';
 import Inspecciones from '../components/Inspecciones';
+import Planes from '../components/Planes';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import eyeRedIcon from '../images/eye-red.png';
 import fileTextRedIcon from '../images/fileText-red.png';
@@ -94,6 +95,7 @@ function Home() {
         </div>
             <Inspecciones />
       </main>
+      <Planes />
     </div>
   );
 }
