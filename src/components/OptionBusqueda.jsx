@@ -11,11 +11,11 @@ function OptionBusqueda() {
     </div>
     <div className="options-images">
       <div className="options-images__left">
-        <img src={buscadorIcon} alt="imagen tarjeta" className="options-images__left-cardCase"/>
+        <img src={buscadorIcon} alt="imagen tarjeta" className="options-images__left-busqueda"/>
       </div>
-      {/* <div className="container-user"> */}
+      <div className="container-userBusqueda">
         <img src={userIcon} alt="imagen usuario" className="options-images-user" />
-      {/* </div> */}
+      </div>
     </div>
     </div>
   )

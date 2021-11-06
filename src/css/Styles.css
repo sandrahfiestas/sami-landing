@@ -368,6 +368,12 @@ body p {
   inline-size: 248px;
   margin-block-start: 2px;
 }
+.options-descriptionSolicitud {
+  font-size: 16px;
+  line-height: 20px;
+  block-size: 116px;
+  inline-size: 269px;
+}
 .options-images {
   display: flex;
   position: relative;
@@ -389,6 +395,17 @@ body p {
   block-size: 117px;
   inline-size: 188px;
 }
+.options-images__left-soliDoc {
+  margin-block-start: -15px;
+  block-size: 181px;
+  inline-size: 172px;
+}
+.options-images__left-busqueda {
+  margin-block-start: 50px;
+}
+.options-images__left-jurisprudencia {
+  margin-block-start: 50px;
+}
 .options-images .container-user {
   margin-block-start: -65px;
   block-size: 289px;
@@ -398,6 +415,21 @@ body p {
 .options-images-user {
   block-size: 289px;
   inline-size: 248.43px;
+}
+.options-images .container-userSolicitud {
+  margin-block-start: -75px;
+  inline-size: 210px;
+  overflow: hidden;
+}
+.options-images .container-userBusqueda {
+  margin-block-start: -60px;
+  inline-size: 210px;
+  overflow: hidden;
+}
+.options-images .container-userJurisprudencia {
+  margin-block-start: -45px;
+  inline-size: 210px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -440,6 +472,10 @@ body p {
     inline-size: 310px;
     line-height: 25px;
   }
+  .options-descriptionSolicitud {
+    block-size: 139px;
+    inline-size: 354px;
+  }
   .options-images {
     inline-size: 508px;
     flex-direction: column-reverse;
@@ -462,9 +498,33 @@ body p {
     margin-block-start: 0px;
     margin-inline-end: 5px;
   }
+  .options-images__left-soliDoc {
+    margin-block-start: 15px;
+    block-size: 301px;
+    inline-size: 292px;
+    margin-right: 170px;
+  }
+  .options-images__left-busqueda {
+    margin-right: 140px;
+  }
+  .options-images__left-jurisprudencia {
+    margin-right: 140px;
+  }
   .options-images .container-user {
-    margin: 1px solid red;
     margin-block-start: 30px;
+  }
+  .options-images .container-userSolicitud {
+    margin-block-start: 25px;
+  }
+  .options-images .container-userBusqueda {
+    block-size: 388.61px;
+    inline-size: 354.33px;
+    margin-block-start: 25px;
+  }
+  .options-images .container-userJurisprudencia {
+    block-size: 388.61px;
+    inline-size: 354.33px;
+    margin-block-start: 25px;
   }
 }
 .content-insights {
