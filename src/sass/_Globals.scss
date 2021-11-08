@@ -102,4 +102,10 @@ body {
   border: 2px solid $primary-red;
 }
 
+@mixin btn_disabled {
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
 

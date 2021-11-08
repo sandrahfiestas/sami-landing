@@ -999,5 +999,113 @@ body p {
     inline-size: 335px;
   }
 }
+.container-contactanos {
+  margin-block-start: 71px;
+  block-size: 474.22px;
+  padding: 30px 21px 21px 19px;
+  color: #ffffff;
+  background-image: url("../images/background_base-contactanos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.container-contactanos__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-block-end: 33px;
+}
+.container-contactanos__form {
+  inline-size: 320px;
+}
+.container-contactanos__form-items {
+  display: flex;
+  flex-direction: column;
+}
+.container-contactanos__form-items label {
+  margin-block-end: 10px;
+}
+.container-contactanos__form-items p {
+  line-height: 1.7rem;
+  font-weight: 700;
+  opacity: 0.5;
+  margin-block-end: 7px;
+}
+.container-contactanos__form-items input {
+  block-size: 39px;
+  inline-size: 320px;
+  line-height: 1.7rem;
+  padding-inline: 19px;
+  background: #EFF2F9;
+  border: 1px solid #D2D6E1;
+  border-radius: 5px;
+}
+.container-contactanos__form-items input::placeholder {
+  color: #969CBA;
+}
+.container-contactanos__form-items input:focus {
+  outline: none;
+}
+.container-contactanos__form button {
+  height: 31px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF3355;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #FF3355;
+  margin: 31px auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.3px;
+}
+.container-contactanos__form button:disabled {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .container-contactanos__form {
+    inline-size: 691px;
+  }
+  .container-contactanos__form-items {
+    flex-direction: inherit;
+    justify-content: space-between;
+  }
+  .container-contactanos__form-items-left, .container-contactanos__form-items-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-contactanos__form-items label {
+    margin-block-end: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-contactanos {
+    padding-inline-start: 228px;
+    background-image: url("../images/background-D-contactanos.png");
+  }
+  .container-contactanos__form button {
+    height: 52px;
+    width: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF3355;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #FF3355;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: 0.2px;
+    margin: 19px auto auto 0;
+  }
+  .container-contactanos__form button:disabled {
+    opacity: 0.3;
+  }
+}
 
 /*# sourceMappingURL=Styles.css.map */
