@@ -999,39 +999,41 @@ body p {
     inline-size: 335px;
   }
 }
-.container-contactanos {
+.contactanos .container-contactanos {
   margin-block-start: 71px;
   block-size: 474.22px;
+  max-inline-size: 1440px;
   padding: 30px 21px 21px 19px;
   color: #ffffff;
   background-image: url("../images/background_base-contactanos.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin: auto;
 }
-.container-contactanos__title {
+.contactanos .container-contactanos__title {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 2rem;
   margin-block-end: 33px;
 }
-.container-contactanos__form {
+.contactanos .container-contactanos__form {
   inline-size: 320px;
 }
-.container-contactanos__form-items {
+.contactanos .container-contactanos__form-items {
   display: flex;
   flex-direction: column;
 }
-.container-contactanos__form-items label {
+.contactanos .container-contactanos__form-items label {
   margin-block-end: 10px;
 }
-.container-contactanos__form-items p {
+.contactanos .container-contactanos__form-items p {
   line-height: 1.7rem;
   font-weight: 700;
   opacity: 0.5;
   margin-block-end: 7px;
 }
-.container-contactanos__form-items input {
+.contactanos .container-contactanos__form-items input {
   block-size: 39px;
   inline-size: 320px;
   line-height: 1.7rem;
@@ -1040,13 +1042,13 @@ body p {
   border: 1px solid #D2D6E1;
   border-radius: 5px;
 }
-.container-contactanos__form-items input::placeholder {
+.contactanos .container-contactanos__form-items input::placeholder {
   color: #969CBA;
 }
-.container-contactanos__form-items input:focus {
+.contactanos .container-contactanos__form-items input:focus {
   outline: none;
 }
-.container-contactanos__form button {
+.contactanos .container-contactanos__form button {
   height: 31px;
   width: 115px;
   display: flex;
@@ -1062,32 +1064,31 @@ body p {
   line-height: 1.5rem;
   letter-spacing: 0.3px;
 }
-.container-contactanos__form button:disabled {
-  opacity: 0.3;
-}
 
 @media screen and (min-width: 768px) {
-  .container-contactanos__form {
+  .contactanos .container-contactanos__form {
     inline-size: 691px;
   }
-  .container-contactanos__form-items {
+  .contactanos .container-contactanos__form-items {
     flex-direction: inherit;
     justify-content: space-between;
   }
-  .container-contactanos__form-items-left, .container-contactanos__form-items-right {
+  .contactanos .container-contactanos__form-items-left, .contactanos .container-contactanos__form-items-right {
     display: flex;
     flex-direction: column;
   }
-  .container-contactanos__form-items label {
+  .contactanos .container-contactanos__form-items label {
     margin-block-end: 26px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .container-contactanos {
+  .contactanos .container-contactanos {
+    margin-block-start: 152px;
     padding-inline-start: 228px;
+    padding-top: 67px;
     background-image: url("../images/background-D-contactanos.png");
   }
-  .container-contactanos__form button {
+  .contactanos .container-contactanos__form button {
     height: 52px;
     width: 144px;
     display: flex;
@@ -1103,8 +1104,141 @@ body p {
     letter-spacing: 0.2px;
     margin: 19px auto auto 0;
   }
-  .container-contactanos__form button:disabled {
-    opacity: 0.3;
+}
+.footer .container-footer {
+  background: #0F3041;
+  margin-block-end: 500px;
+  block-size: 525px;
+  padding: 37px 19px 30px 19px;
+  color: #ffffff;
+  max-inline-size: 1440px;
+  margin: auto;
+}
+.footer .container-footer__logoBtn img {
+  block-size: 28px;
+  inline-size: 90px;
+}
+.footer .container-footer__logoBtn-copyright {
+  display: none;
+}
+.footer .container-footer__logoBtn-conversemos {
+  font-size: 2.8rem;
+  margin-block-start: 30px;
+  margin-block-end: 10px;
+}
+.footer .container-footer__logoBtn-escribenos {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+.footer .container-footer__logoBtn button {
+  height: 37px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF3355;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #FF3355;
+  margin-block-start: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3%;
+}
+.footer .container-footer__info {
+  inline-size: 290px;
+}
+.footer .container-footer__info h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  margin-block-start: 48px;
+  margin-block-end: 24px;
+}
+.footer .container-footer__info-item {
+  display: flex;
+  align-items: center;
+  margin-block-end: 7px;
+}
+.footer .container-footer__info-item img {
+  margin-inline-end: 18px;
+}
+.footer .container-footer__info-item p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.1px;
+}
+.footer .container-footer__redes {
+  margin-block-start: 54px;
+  inline-size: 290px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .container-footer__redes img {
+  margin-inline: 9px;
+}
+.footer .container-footer__redes p {
+  margin-block-start: 8px;
+  font-size: 0.9rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .container-footer__info {
+    margin-inline-start: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .container-footer {
+    padding: 58.37px 70.82px 198.44px;
+    block-size: 389px;
+  }
+  .footer .container-footer__logoBtn img {
+    block-size: 40.86px;
+    inline-size: 134px;
+  }
+  .footer .container-footer__logoBtn-copyright {
+    display: block;
+    margin-block-start: 7px;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+  }
+  .footer .container-footer__logoBtn-conversemos {
+    font-size: 3.2rem;
+    margin-block-start: 44px;
+    margin-block-end: 8px;
+  }
+  .footer .container-footer__logoBtn button {
+    margin-block-start: 19.16px;
+  }
+  .footer .container-footer__info h2 {
+    margin-block-start: 42px;
+    margin-block-end: 21px;
+  }
+  .footer .container-footer__info-item {
+    margin-block-end: 12px;
+  }
+  .footer .container-footer__redes {
+    margin-block-start: 40px;
+  }
+  .footer .container-footer__redes p {
+    display: none;
+  }
+  .footer .container-footer__redes-twitter {
+    block-size: 14.52px;
+    inline-size: 19.12px;
+  }
+  .footer .container-footer__redes-linkedin {
+    block-size: 17.17px;
+    inline-size: 18.38px;
   }
 }
 

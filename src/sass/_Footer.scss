@@ -1,0 +1,148 @@
+.footer {
+  .container-footer {
+    background: #0F3041;
+    margin-block-end: 500px;
+    block-size: 525px;
+    padding: 37px 19px 30px 19px;
+    color: $white;
+    max-inline-size: 1440px;
+    margin: auto;
+  
+    &__logoBtn {
+      img {
+        block-size: 28px;
+        inline-size: 90px;
+      }
+      &-copyright {
+        display: none;
+      }
+      &-conversemos {
+        font-size: 2.8rem;
+        margin-block-start: 30px;
+        margin-block-end: 10px;
+      }
+      &-escribenos {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+      }
+      button {
+        @include base_btn(37px, 130px);
+        margin-block-start: 10px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 3%;
+      }
+    }
+  
+    &__info {
+      inline-size: 290px;
+      h2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        margin-block-start: 48px;
+        margin-block-end: 24px;
+      }
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-block-end: 7px;
+        img {
+          margin-inline-end: 18px;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          letter-spacing: 0.1px;
+        }
+      }
+  
+    }
+  
+    &__redes {
+      margin-block-start: 54px;
+      inline-size: 290px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+      img {
+        margin-inline: 9px;
+      }
+      p {
+        margin-block-start: 8px;
+        font-size: 0.9rem;
+        line-height: 2.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .container-footer {
+      display: flex;
+      justify-content: space-between;
+      &__info {
+        margin-inline-start: 80px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    .container-footer {
+      padding: 58.37px 70.82px 198.44px;
+      block-size: 389px;
+  
+      &__logoBtn {
+        img {
+          block-size: 40.86px;
+          inline-size: 134px;
+        }
+        &-copyright {
+          display: block;
+          margin-block-start: 7px;
+          font-size: 1.2rem;
+          line-height: 2.8rem;
+          font-weight: 500;
+        }
+        &-conversemos {
+          font-size: 3.2rem;
+          margin-block-start: 44px;
+          margin-block-end: 8px;
+        }
+        button {
+          margin-block-start: 19.16px;
+        }
+      }
+  
+      &__info {
+        h2 {
+          margin-block-start: 42px;
+          margin-block-end: 21px;
+        }
+        &-item {
+          margin-block-end: 12px;
+        }
+      }
+  
+      &__redes {
+        margin-block-start: 40px;
+        p {
+          display: none;
+        }
+        &-twitter {
+          block-size: 14.52px;
+          inline-size: 19.12px;
+        }
+        &-linkedin {
+          block-size: 17.17px;
+          inline-size: 18.38px;
+        }
+      }
+    }
+  }
+}

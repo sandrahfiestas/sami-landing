@@ -9,6 +9,7 @@ import Testimonios from '../components/Testimonios';
 import Inspecciones from '../components/Inspecciones';
 import Planes from '../components/Planes';
 import Contactanos from '../components/Contactanos';
+import Footer from '../components/Footer';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import eyeRedIcon from '../images/eye-red.png';
 import fileTextRedIcon from '../images/fileText-red.png';
@@ -98,6 +99,7 @@ function Home() {
       </main>
       <Planes />
       <Contactanos />
+      <Footer />
     </div>
   );
 }
