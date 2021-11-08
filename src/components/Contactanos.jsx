@@ -25,49 +25,51 @@ function Contactanos() {
     }
 
   return (
-    <div className="container-contactanos">
-      <p className="container-contactanos__title">SOLICITA UN DEMO O COMUNICATE CON NOSOTROS</p>
-      <FinalForm
-        onSubmit={(values) => enviaDataContactanos(values)}
-        initialValues={{initialDataContact}}
-        render={({
-          handleSubmit, invalid, pristine, dirtySinceLastSubmit,
-        }) => (
-          <>
-            <form onSubmit={handleSubmit} className="container-contactanos__form">
-              <div className="container-contactanos__form-items">
-                <div className="container-contactanos__form-items-left">
-                  <label>
-                    <p>Nombre completo</p>
-                    <Field component="input" type="text" name="nombres" />
-                  </label>
-                  <label>
-                    <p>Correo electrónico</p>
-                    <Field component="input" type="email" name="correo" />
-                  </label>
-                </div>
-                <div className="container-contactanos__form-items-right">
-                  <label>
-                    <p>Empresa</p>
-                    <Field component="input" type="text" name="empresa" />
-                  </label>
-                  <label>
-                    <p>Cargo</p>
-                    <Field component="input" type="text" name="cargo" />
-                  </label>
-                </div>
-              </div>
-              <button
-                className="container-contactanos__form-button"
-                type="submit"
-                disabled={(invalid && !dirtySinceLastSubmit) || pristine}
-              >
-                Enviar
-              </button>
-            </form>
-          </>
-        )}
-      />
+    <div className="contactanos">
+      <div className="container-contactanos">
+        <p className="container-contactanos__title">SOLICITA UN DEMO O COMUNICATE CON NOSOTROS</p>
+          <FinalForm
+            onSubmit={(values) => enviaDataContactanos(values)}
+            initialValues={{initialDataContact}}
+            render={({
+              handleSubmit, invalid, pristine, dirtySinceLastSubmit,
+            }) => (
+              <>
+                <form onSubmit={handleSubmit} className="container-contactanos__form">
+                  <div className="container-contactanos__form-items">
+                    <div className="container-contactanos__form-items-left">
+                      <label>
+                        <p>Nombre completo</p>
+                        <Field component="input" type="text" name="nombres" placeholder="Alonso Jesús Aguirre Deslagado" />
+                      </label>
+                      <label>
+                        <p>Correo electrónico</p>
+                        <Field component="input" type="email" name="correo" placeholder="alonso@gmail.com" />
+                      </label>
+                    </div>
+                    <div className="container-contactanos__form-items-right">
+                      <label>
+                        <p>Empresa</p>
+                        <Field component="input" type="text" name="empresa" placeholder="Alicorp" />
+                      </label>
+                      <label>
+                        <p>Cargo</p>
+                        <Field component="input" type="text" name="cargo" placeholder="Abogado" />
+                      </label>
+                    </div>
+                  </div>
+                  <button
+                    className="container-contactanos__form-button"
+                    type="submit"
+                    disabled={(invalid && !dirtySinceLastSubmit) || pristine}
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </>
+            )}
+          />
+      </div>
     </div>
   )
 }
