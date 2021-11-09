@@ -7,6 +7,9 @@ import puntosIcon from '../images/back-puntos.png';
 import equisIcon from '../images/back-equis.png';
 import logoMiranda from '../images/logo-miranda.png';
 import capacidadesImage from '../images/capacidades.png';
+import { ReactComponent as RepeatIcon } from '../images/svg/repeat.svg';
+import { ReactComponent as AlertIcon } from '../images/svg/alert.svg';
+import { ReactComponent as UsersIcon } from '../images/svg/users.svg';
 
 function PorqueSami() {
   return(
@@ -50,6 +53,38 @@ function PorqueSami() {
               </div>
               <div className="d-flex justify-content-center">
                 <img src={capacidadesImage} alt="imagen diseño legal" className="content-coreSami-imagenCapacidades" />
+              </div>
+            </section>
+          </div>
+          <div className="container-porqueSami__main-wrapperDown">
+            <section className="content-addOnd">
+              <p className="itemSubtitulo">ADD OND</p>
+              <h2 className="subtitulo">Agiliza tus inspecciones con nuestros servicios</h2>
+              <div className="content-addOnd__pasos">
+                <div className="content-addOnd__pasos-paso">
+                  <p className="content-addOnd__pasos-paso-number">1</p>
+                  <div className="content-addOnd__pasos-paso-description">
+                    <strong>Sincroniza tu casilla electrónica</strong>
+                    <p>Recibe las notificaciones de tu casilla sin tener que ingresar a tu buzón, solo enlaza a SUNAFIL con Sami y ¡Listo!.</p>
+                    <RepeatIcon className="content-addOnd__pasos-paso-icon" />
+                  </div>
+                </div>
+                <div className="content-addOnd__pasos-paso itemTwo">
+                  <p className="content-addOnd__pasos-paso-number">2</p>
+                  <div className="content-addOnd__pasos-paso-description">
+                    <strong>Alerta nueva inspección</strong>
+                    <p>Ten la fecha y detalle de la inspección para que te anticipes y estés listo.</p>
+                    <AlertIcon className="content-addOnd__pasos-paso-icon" />
+                  </div>
+                </div>
+                <div className="content-addOnd__pasos-paso">
+                  <p className="content-addOnd__pasos-paso-number">3</p>
+                  <div className="content-addOnd__pasos-paso-description">
+                    <strong>Servicio paralegal</strong>
+                    <p>Nos encargamos del trabajo operativo con Sami Paralegal para que tú te enfoques en la gestión y estrategia de tu cartera de casos.</p>
+                    <UsersIcon className="content-addOnd__pasos-paso-icon" />
+                  </div>
+                </div>
               </div>
             </section>
           </div>

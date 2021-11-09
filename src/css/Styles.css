@@ -1372,6 +1372,45 @@ body p {
 .container-porqueSami__main .content-coreSami-imagenCapacidades {
   display: none;
 }
+.container-porqueSami__main-wrapperDown .content-addOnd {
+  margin-block-start: 204px;
+  padding: 0 0 0 14px;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso {
+  margin-block-start: 50px;
+  margin-inline-start: 7px;
+  width: 297px;
+  display: flex;
+  position: relative;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-number {
+  font-size: 3.5rem;
+  line-height: 4.3rem;
+  font-weight: 700;
+  color: #969CBA;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description {
+  margin-block-start: 9px;
+  margin-inline-start: 8px;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description strong {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #0E3141;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description p {
+  margin-block-start: 1px;
+  inline-size: 212px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-icon {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  stroke: #FF3355;
+}
 
 @media screen and (min-width: 480px) {
   .container-porqueSami .content-descubreComo h2 {
@@ -1447,30 +1486,30 @@ body p {
   .container-porqueSami__hero-title-backEquis {
     left: 143px;
   }
-  .container-porqueSami .content-descubreComo-top {
+  .container-porqueSami__main .content-descubreComo-top {
     display: flex;
   }
-  .container-porqueSami .content-descubreComo-logoTipo {
+  .container-porqueSami__main .content-descubreComo-logoTipo {
     height: 30.54px;
     width: 91px;
     margin-block: 16px 13px;
   }
-  .container-porqueSami .content-descubreComo-description {
+  .container-porqueSami__main .content-descubreComo-description {
     margin-block-start: 8px;
   }
-  .container-porqueSami .content-descubreComo .images {
+  .container-porqueSami__main .content-descubreComo .images {
     flex-direction: column;
   }
-  .container-porqueSami .content-descubreComo-imagenMiranda {
+  .container-porqueSami__main .content-descubreComo-imagenMiranda {
     margin-block-end: 0px;
   }
-  .container-porqueSami .content-descubreComo-logoMiranda {
+  .container-porqueSami__main .content-descubreComo-logoMiranda {
     display: block;
     height: 106px;
     width: 150px;
     margin: 0 22px 0 auto;
   }
-  .container-porqueSami .content-descubreComo button {
+  .container-porqueSami__main .content-descubreComo button {
     height: 52px;
     width: 193px;
     display: flex;
@@ -1501,7 +1540,7 @@ body p {
   .container-porqueSami__hero-title-backEquis {
     display: none;
   }
-  .container-porqueSami .content-descubreComo {
+  .container-porqueSami__main .content-descubreComo {
     block-size: 555px;
     padding: 52px 78px 0 74px;
     margin-inline-start: 107px;
@@ -1509,31 +1548,85 @@ body p {
     background-repeat: no-repeat;
     border-bottom: none;
   }
-  .container-porqueSami .content-descubreComo .images {
+  .container-porqueSami__main .content-descubreComo .images {
     width: 100%;
     align-items: flex-end;
   }
-  .container-porqueSami .content-descubreComo-imagenMiranda {
+  .container-porqueSami__main .content-descubreComo-imagenMiranda {
     height: 246px;
     width: 438px;
   }
-  .container-porqueSami .content-descubreComo-logoMiranda {
+  .container-porqueSami__main .content-descubreComo-logoMiranda {
     margin-block-start: -10px;
   }
-  .container-porqueSami .content-descubreComo button {
+  .container-porqueSami__main .content-descubreComo button {
     margin-top: 22px;
   }
-  .container-porqueSami .content-coreSami {
+  .container-porqueSami__main .content-coreSami {
     display: flex;
     height: 432px;
     margin-inline-start: 180px;
   }
-  .container-porqueSami .content-coreSami-imagenCapacidades {
+  .container-porqueSami__main .content-coreSami-imagenCapacidades {
     display: block;
     height: 512px;
     width: 512px;
     margin-block-start: -80px;
     margin-inline-start: 95px;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd {
+    margin-block-start: 19px;
+    margin-inline-start: 180px;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd .itemSubtitulo {
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd .subtitulo {
+    inline-size: 457px;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos {
+    margin-block-start: 49px;
+    width: 984px;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos .itemTwo {
+    margin-left: 480px;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso {
+    margin-block-start: 0px;
+    margin-block-end: 70px;
+    margin-inline-start: 0px;
+    width: 370px;
+    position: relative;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-number {
+    font-size: 20rem;
+    line-height: 24.4rem;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description {
+    margin-block-start: 38px;
+    margin-inline-start: 25px;
+    position: relative;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description strong {
+    inline-size: 199px;
+    border: 1px solid transparent;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-description p {
+    margin-block-start: 22px;
+    inline-size: 265px;
+  }
+  .container-porqueSami__main-wrapperDown .content-addOnd__pasos-paso-icon {
+    height: 100px;
+    width: 100px;
+    top: -20px;
+    bottom: 0;
+    margin: auto;
+    right: -130px;
+    stroke: #466EFE;
+    opacity: 0.3;
   }
 }
 
