@@ -1355,6 +1355,23 @@ body p {
   letter-spacing: 3%;
   margin: auto;
 }
+.container-porqueSami__main .content-coreSami {
+  margin-block-start: 145px;
+  height: 420;
+}
+.container-porqueSami__main .content-coreSami h2 {
+  inline-size: 269.81px;
+  line-height: 3.8rem;
+}
+.container-porqueSami__main .content-coreSami-description {
+  margin-block-start: 24px;
+  inline-size: 307px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.container-porqueSami__main .content-coreSami-imagenCapacidades {
+  display: none;
+}
 
 @media screen and (min-width: 480px) {
   .container-porqueSami .content-descubreComo h2 {
@@ -1378,6 +1395,26 @@ body p {
     line-height: 14.63px;
     letter-spacing: 3%;
     margin: auto;
+  }
+  .container-porqueSami .content-coreSami {
+    margin-block-start: 144px;
+    height: 405px;
+  }
+  .container-porqueSami .content-coreSami .itemSubtitulo {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    margin-block-end: 24px;
+  }
+  .container-porqueSami .content-coreSami .subtitulo {
+    inline-size: 454px;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .container-porqueSami .content-coreSami-description {
+    margin-block-start: 19px;
+    inline-size: 449px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1485,6 +1522,18 @@ body p {
   }
   .container-porqueSami .content-descubreComo button {
     margin-top: 22px;
+  }
+  .container-porqueSami .content-coreSami {
+    display: flex;
+    height: 432px;
+    margin-inline-start: 180px;
+  }
+  .container-porqueSami .content-coreSami-imagenCapacidades {
+    display: block;
+    height: 512px;
+    width: 512px;
+    margin-block-start: -80px;
+    margin-inline-start: 95px;
   }
 }
 
