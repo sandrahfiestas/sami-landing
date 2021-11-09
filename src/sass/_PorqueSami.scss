@@ -1,0 +1,248 @@
+.container-porqueSami {
+  &__hero {
+    block-size: 395px;
+    &-title {
+      padding-inline: 17px 13px;
+      margin-block-start: 4.7rem;
+      position: relative;
+      &-hi {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #466EFE;
+      }
+      h1 {
+        margin-block-start: 1.5rem;
+        font-size: 3.6rem;
+        font-weight: 700;  
+        line-height: 4rem;   
+        color: #3F4D79;
+      }
+      &-description {
+        margin-block-start: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      button {
+        @include base_btn (31px, 137px);
+        margin-block-start: 23px;
+        margin-inline : auto;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 3%;
+      }
+      img {
+        position: absolute;
+      }
+      &-backCircle {
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      &-backPuntos {
+        top: -32px;
+        right: 24px;
+      }
+      &-backEquis {
+        bottom: 0;
+        left: 43px;
+        bottom: 5.34px;
+      }
+    }
+  }
+  
+  &__main {
+    margin-block-start: 51px;
+    &-wrapperTop {
+      margin: auto;
+      
+      &-content {
+        background: $white;
+        margin-inline: 16px;
+      }
+    }
+    .content-descubreComo {
+      margin-block-start: 51px;
+      block-size: 566px;
+      min-inline-size: 327px;
+      max-inline-size: 1063px;
+      padding: 11px 10px 0 12px;
+      background-image: url("../images/background-M-descubreComo.png");
+      background-repeat: no-repeat;
+      // box-shadow: 0px -4px 20px rgba(210, 214, 225, 0.58);
+      border-radius: 10px;
+      
+      // &-border {
+      //   min-inline-size: 327px;
+      //   max-inline-size: 1063px;
+      // }
+      h2 {
+        margin-block-start: 15.46px;
+      }
+      &-description {
+        margin-block-start: 28px;
+        inline-size: 268px;
+        line-height: 2rem;
+      }
+      &-imagenMiranda {
+        block-size: 92px;
+        inline-size: 235px;
+        margin-block: 20px 13px;
+      }
+      &-logoMiranda {
+        display: none
+      }
+      button {
+        @include base_btn(31px, 132px);
+        font-size: 1.2rem;
+        line-height: 14.63px;
+        letter-spacing: 3%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container-porqueSami {
+    .content-descubreComo {
+      h2 {
+        inline-size: 419px;
+        font-size: 3.6rem;
+      }
+      &-description {
+        inline-size: 354px;
+      }
+      button {
+        @include base_btn(31px, 132px);
+        font-size: 1.2rem;
+        line-height: 14.63px;
+        letter-spacing: 3%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-porqueSami{
+    &__hero {
+      margin-block-start: 2px;
+      &-title {
+        margin: auto;
+        text-align: center;
+        max-inline-size: 674px;
+        padding-block-start: 46px;
+        &-hi {
+          font-size: 1.2rem;
+          line-height: 40px;
+        }
+        h1 {
+          margin-block-start: 18px;
+        }
+        &-description {
+          margin-block-start: 2.2rem;
+          line-height: 2rem;
+        }
+        &-backCircle {
+          left: 250px;
+        }
+        &-backPuntos {
+          right: 0px;
+        }
+        &-backEquis {
+          left: 143px;
+        }
+      }
+    }
+    .content-descubreComo {
+      &-top {
+        display: flex;
+      }
+      &-logoTipo {
+        height: 30.54px;
+        width: 91px;
+        margin-block: 16px 13px;
+      }
+      &-description {
+        margin-block-start: 8px;
+      }
+      .images {
+        flex-direction: column;
+      }
+      &-imagenMiranda {
+        margin-block-end: 0px;
+      }
+      &-logoMiranda {
+        display: block;
+        height: 106px;
+        width: 150px;
+        margin: 0 22px 0 auto;
+      }
+      button {
+        @include base_btn(52px, 193px);
+        font-size: 1.6rem;
+        line-height: 20px;
+        margin: 55px auto auto 0;
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 1024px) {
+  .container-porqueSami{
+    &__hero {
+      block-size: 301px;
+      background-image: url("../images/background-D-porqueSami.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      &-title {
+        &-backCircle {
+          display: none;
+        }
+        &-backPuntos {
+          display: none;
+        }
+        &-backEquis {
+          display: none;
+        }
+      }
+    }
+    .content-descubreComo {
+      block-size: 555px;
+      padding: 52px 78px 0 74px;
+      margin-inline-start: 107px;
+      // box-shadow: 0px -4px 20px rgba(210, 214, 225, 0.58);
+      // border-radius: 10px;
+      background-image: url("../images/background-D-descubreComo.png");
+      background-repeat: no-repeat;
+      // background-size: cover;
+      // background-position-x: center;
+      border-bottom: none;
+
+      // &-border {
+      //   height: 338px;
+      //   border: 1px solid red;
+      //   box-shadow: 0px -4px 20px rgba(210, 214, 225, 0.58);
+      //   border-radius: 10px;
+      //   position: absolute;
+      // }
+
+      .images {
+        width: 100%;
+        align-items: flex-end;
+      }
+      &-imagenMiranda {
+        height: 246px;
+        width: 438px;
+      }
+      &-logoMiranda {
+        margin-block-start: -10px;
+      }
+      button {
+        margin-top: 22px;
+      }
+    }
+  }
+}

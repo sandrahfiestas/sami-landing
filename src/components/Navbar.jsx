@@ -8,30 +8,30 @@ import logoTipoIcon from '../images/logo-tipo.svg'
 
 function NavBar() {
   // cambio de color del navbar con Jquery
-  $(function(){
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
-      if (scroll > 10) {
-        $(".navbar").css("background" , "#8E122E");
-      }
-      else{
-        $(".navbar").css("background" , "transparent");  	
-      }
-    })
-  })
+  // $(function(){
+  //   $(window).scroll(function(){
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll > 10) {
+  //       $(".navbar").css("background" , "#8E122E");
+  //     }
+  //     else{
+  //       $(".navbar").css("background" , "transparent");  
+  //     }
+  //   })
+  // })
 
   return (
     <div className="container-navbar">
     <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
-        <img src={logoTipoIcon} alt="logo Sami" />
+        <Navbar.Brand exact to="/">
+        <NavLink exact to="/"><img src={logoTipoIcon} alt="logo Sami" /></NavLink>
         </Navbar.Brand>
         <button className="btnLogin">Iniciar sesión</button>
         <Navbar.Toggle className="btnMenu" aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <NavLink exact to="/404">¿Por qué Sami?</NavLink>
+            <NavLink exact to="/porqueSami">¿Por qué Sami?</NavLink>
             <NavLink exact to="/404">Sami Insights</NavLink>
             <NavLink exact to="/404">Solicita un Demo</NavLink>
           </Nav>
