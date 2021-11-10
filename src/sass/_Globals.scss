@@ -87,6 +87,14 @@ body {
   }
 }
 
+.aNoStyle {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
+}
+
 .itemSubtitulo {
   font-size: 1.1rem;
   font-weight: 700;

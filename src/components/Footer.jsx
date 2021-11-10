@@ -15,8 +15,9 @@ function Footer() {
           <p className="container-footer__logoBtn-copyright">© 2021 - Form | All right reserved</p>
           <p className="container-footer__logoBtn-conversemos">¡Conversémos!</p>
           <p className="container-footer__logoBtn-escribenos">Escríbenos.</p>
-          <button>Contáctanos</button>
-        </div>
+          <button>
+            <a className="aNoStyle" href="#contactanos">Contáctanos</a></button>
+          </div>
         <div className="container-footer__info">
           <h2>Contáctanos a través de:</h2>
           <div className="container-footer__info-item">

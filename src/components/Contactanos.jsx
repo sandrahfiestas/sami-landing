@@ -25,7 +25,7 @@ function Contactanos() {
     }
 
   return (
-    <div className="contactanos">
+    <div id="contactanos" className="contactanos">
       <div className="container-contactanos">
         <p className="container-contactanos__title">SOLICITA UN DEMO O COMUNICATE CON NOSOTROS</p>
           <FinalForm
