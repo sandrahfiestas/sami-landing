@@ -131,8 +131,6 @@ function Planes() {
       </div>
     </div>
   </div>
-
-    <div style={{ height: '500px' }}></div>
     </section>
   )
 }

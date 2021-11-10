@@ -8,6 +8,8 @@ import Insights from '../components/Insights';
 import Testimonios from '../components/Testimonios';
 import Inspecciones from '../components/Inspecciones';
 import Planes from '../components/Planes';
+import Contactanos from '../components/Contactanos';
+import Footer from '../components/Footer';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import eyeRedIcon from '../images/eye-red.png';
 import fileTextRedIcon from '../images/fileText-red.png';
@@ -60,13 +62,15 @@ function Home() {
           <p className="container-home__hero-title-hi">¡HOLA, SOMOS SAMI!</p>
           <h1>Tus fiscalizaciones bajo control, más simples y transparentes</h1>
           <p className="container-home__hero-title-description"><strong>Sami </strong>facilita la gestión de tus fiscalizaciones, cada caso y actuación. Controla y monitorea todo el proceso, identifica los pendientes más cercanos de tu cartera en tiempo real y potencia tu relación con SUNAFIL.</p>
-          <button>Descubre cómo</button>
+          <button>
+            <a className="aNoStyle" href="#descubre">Descubre cómo</a>
+          </button>
         </div>
       </div>
       <main className="container-home__main">
         <div className="container-home__main-wrapperTop">
           <div className="container-home__main-wrapperTop-content">
-            <section className="content-descubre">
+            <section id="descubre" className="content-descubre">
               <div className="content-descubre__options">
                 <div className={showGestiona ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnGestiona}>
                   <img src={showGestiona ? eyeWhiteIcon : eyeRedIcon} alt="icono ojo" />
@@ -87,7 +91,9 @@ function Home() {
                {showSolicitud ? <OptionSolicitud /> : ''}
                {showBusqueda ? <OptionBusqueda /> : ''}
                {showJurisprudencia ? <OptionJurisprudencia /> : ''}
-              <button>Solicita una demo</button>
+              <button>
+                <a className="aNoStyle" href="#contactanos">Solicita una demo </a>
+              </button>
             </section>
             <Insights />
             <Testimonios />
@@ -96,6 +102,8 @@ function Home() {
             <Inspecciones />
       </main>
       <Planes />
+      <Contactanos />
+      <Footer />
     </div>
   );
 }
