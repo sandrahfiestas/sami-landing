@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import logoTipoIcon from '../images/svg/logo-tipo-color.svg';
 import mirandaAmadoImage from '../images/miranda-amado.png'
 import circleIcon from '../images/back-circle.png';
@@ -10,6 +11,10 @@ import capacidadesImage from '../images/capacidades.png';
 import { ReactComponent as RepeatIcon } from '../images/svg/repeat.svg';
 import { ReactComponent as AlertIcon } from '../images/svg/alert.svg';
 import { ReactComponent as UsersIcon } from '../images/svg/users.svg';
+import memberUnoImage from '../images/sandra-huaman-fiestas.png';
+import memberTwoImage from '../images/jose-castillo.png';
+import memberThreeImage from '../images/fiorella-alvitez.png';
+import linkedinIcon from '../images/linkedin.png';
 
 function PorqueSami() {
   return(
@@ -87,10 +92,46 @@ function PorqueSami() {
                 </div>
               </div>
             </section>
+            <section className="content-equipo">
+              <p className="itemSubtitulo">EQUIPO</p>
+              <h2 className="subtitulo">Conoce a los expertos detrás de SAMI</h2>
+              <div className="content-equipo__members">
+                <div className="content-equipo__members-options">
+                  <div className="content-equipo__members-options-strategic">Strategic</div>
+                  <div className="content-equipo__members-options-delivery">Delivery</div>
+                </div>
+                <div className="content-equipo__members-containerMember">
+                  <div className="content-equipo__members-containerMember-member">
+                    <img src={memberUnoImage} alt="foto Sandra Huaman frontend" className="img-member" />
+                    <div className="content-equipo__members-containerMember-member-detail">
+                      <img src={linkedinIcon} alt="linkedin" />
+                      <p className="name">Sandra Huamán</p>
+                      <p className="detail">Desarrolladora Front End</p>
+                    </div>
+                  </div>
+                  <div className="content-equipo__members-containerMember-member">
+                    <img src={memberTwoImage} alt="foto Jose Castillo backend" className="img-member" />
+                    <div className="content-equipo__members-containerMember-member-detail">
+                      <img src={linkedinIcon} alt="linkedin" />
+                      <p className="name">José Castillo</p>
+                      <p className="detail">Desarrolladora Back End</p>
+                    </div>
+                  </div>
+                  <div className="content-equipo__members-containerMember-member">
+                    <img src={memberThreeImage} alt="foto" className="img-member" />
+                    <div className="content-equipo__members-containerMember-member-detail">
+                      <img src={linkedinIcon} alt="linkedin" />
+                      <p className="name">Fiorella Alvitez</p>
+                      <p className="detail">Diseñadora UX/UI</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </main>
-      <div style={{ height:"500px" }}></div>
+      <Footer />
     </div>
   );
 }
