@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+// import $ from 'jquery';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -31,9 +31,9 @@ function NavBar() {
         <Navbar.Toggle className="btnMenu" aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <NavLink exact to="/porqueSami">¿Por qué Sami?</NavLink>
-            <NavLink exact to="/404">Sami Insights</NavLink>
-            <NavLink exact to="/404">Solicita un Demo</NavLink>
+            <NavLink exact to="/porqueSami" activeClassName="item-active">¿Por qué Sami?</NavLink>
+            <NavLink exact to="/404" activeClassName="item-active">Sami Insights</NavLink>
+            <NavLink exact to="/404" activeClassName="item-active">Solicita un Demo</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

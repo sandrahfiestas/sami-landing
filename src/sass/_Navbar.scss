@@ -27,26 +27,53 @@
       color: transparent;
       border-color: transparent;
       padding-right: 0;
+
       span {
         block-size: 3rem;
         inline-size: 3rem;
         background-image: url(../images/menu.svg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 17px;
+        z-index: 2;
       }
     }
     .navbar-collapse {
       justify-content: flex-end;
+      margin-top: -55px;
+      background: #8E122E;
+      opacity: 0.9;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 0;
+      z-index: 1;
       .navbar-nav {
-        align-items: flex-end;
-        // text-align: end;
-        // justify-content: space-between;
+        margin-top: 58px;
+        align-items: center;
         a {
+          height: 99px;
           width: 150px;
           font-size: 1.4rem;
           line-height: 20px;
           font-weight: 600;
-          text-align: left;
+          text-align: center;
           color: white;
           text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:nth-child(2n) {
+            height: 120px;
+            width: 323px;
+            border-top: 1px solid #FFFFFF;
+            border-bottom: 1px solid #FFFFFF;
+          }
+        }
+        .item-active {
+          color: #FF3355;
         }
       }
     } 
@@ -75,6 +102,12 @@
 @media screen and (min-width: 576px) { //media-bootstrap
   .container-navbar .container {
     max-width: 100%;
+    // .navbar-collapse {
+    //   .navbar-nav {
+    //     a {
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -84,9 +117,23 @@
       padding-left: 6.5rem;
       padding-right: 20rem;
       .navbar-collapse {
+        //
+        margin-top: 0;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        z-index: 0;
         .navbar-nav {
+          margin-top: 0;
           a {
             text-align: center;
+            height: 0;
+            &:nth-child(2n) {
+              height: 0px;
+              width: 150px;
+              border-top: 0;
+              border-bottom: 0;
+            }
           }
         }
       }
