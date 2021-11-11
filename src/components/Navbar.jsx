@@ -32,7 +32,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <NavLink exact to="/porqueSami" activeClassName="item-active">¿Por qué Sami?</NavLink>
-            <NavLink exact to="/404" activeClassName="item-active">Sami Insights</NavLink>
+            <NavLink exact to="/samiInsights" activeClassName="item-active">Sami Insights</NavLink>
             <NavLink exact to="/404" activeClassName="item-active">Solicita un Demo</NavLink>
           </Nav>
         </Navbar.Collapse>
