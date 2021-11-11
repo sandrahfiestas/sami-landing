@@ -1,6 +1,5 @@
 .container-samiInsights {
   &__hero {
-    // block-size: 395px;
     &-title {
       padding-inline: 17px 13px;
       margin-block-start: 4.7rem;
@@ -20,7 +19,6 @@
       &-textSimbolo {
         font-weight: 700;
         line-height: 2.4rem;
-        // display: flex;
         align-items: center;
         margin-block-start: 15px;
         margin-block-end: 5.16px;
@@ -246,56 +244,30 @@
     &__main {
       .content-samiInsights {
         &__steps {
-          // margin-block-start: 21px;
           height: 255px;
-          // display: flex;
-          // position: relative;
-          // // border: 1px solid blue;
           .smallStepsIcon {
             display: none;
           }
           .bigStepsIcon-oculto {
             display: block;
           }
-          // &-stepImg {
-            // margin-left: -7px;
-            // position: absolute;
-          // }
           &-description {
-            // // border: 1px solid yellow;
-            // display: flex;
-            // flex-direction: column;
-            // inline-size: 287px;
             &-stepUno {
-              // border: 1px solid;
               height: auto;
               width: 364px;
               margin: 22px 0 0 54px;
-              // line-height: 1.8rem;
             }
             &-stepDos {
-            //   // border: 1px solid green;
               height: auto;
               width: 371px;
               margin: 45px 0 0 20px;
-            //   line-height: 1.8rem;
             }
             &-stepTres {
-              // border: 1px solid blue;
               height: auto;
               width: 391px;
               margin: 53px 0 0 45px;
-              // line-height: 1.8rem;
             }
           }
-          // &-person {
-          //   // border: 1px solid red;
-          //   height: 289px;
-          //   width: 123.63px;
-          //   position: absolute;
-          //   top: -65px;
-          //   right: -20px;
-          // }
         }
       }
     }
@@ -321,7 +293,6 @@
         }
         &-textSimbolo {
           line-height: 2.4rem;
-          // display: flex;
           margin-block-start: 11px;
           margin-block-end: 12px;
           img {
@@ -345,65 +316,6 @@
         }
         &-backEquis {
           left: 143px;
-        }
-      }
-    }
-
-    &__main {
-      // &-wrapperTop {
-      //   margin: auto;
-      //   &-content {
-      //     background: $white;
-      //     margin-inline: 16px;
-      //   }
-      // }
-
-      .content-samiInsights {
-        &__steps {
-          // margin-block-start: 21px;
-          // height: 374px;
-          // display: flex;
-          // position: relative;
-          // // border: 1px solid blue;
-          // &-stepImg {
-          //   margin-left: -7px;
-          //   position: absolute;
-          // }
-          &-description {
-            // // border: 1px solid yellow;
-            // display: flex;
-            // flex-direction: column;
-            // inline-size: 287px;
-            // &-stepUno {
-            //   // border: 1px solid;
-            //   height: 104px;
-            //   width: 153px;
-            //   margin: 15px 0 0 68px;
-            //   line-height: 1.8rem;
-            // }
-            // &-stepDos {
-            //   // border: 1px solid green;
-            //   height: 100px;
-            //   width: 230px;
-            //   margin: 45px 0 0 24px;
-            //   line-height: 1.8rem;
-            // }
-            // &-stepTres {
-            //   // border: 1px solid blue;
-            //   height: 73px;
-            //   width: 253px;
-            //   margin: 13px 0 0 56px;
-            //   line-height: 1.8rem;
-            // }
-          }
-          // &-person {
-          //   // border: 1px solid red;
-          //   height: 289px;
-          //   width: 123.63px;
-          //   position: absolute;
-          //   top: -65px;
-          //   right: -20px;
-          // }
         }
       }
     }
@@ -459,9 +371,6 @@
         &__steps {
           margin-block-start: 30px;
           height: 255px;
-          // display: flex;
-          // position: relative;
-          // // border: 1px solid blue;
           .smallStepsIcon {
             display: none;
           }
@@ -470,39 +379,27 @@
           }
           &-stepImg {
             margin-left: -10px;
-            // position: absolute;
           }
           &-description {
-            // // border: 1px solid yellow;
-            // display: flex;
-            // flex-direction: column;
-            // inline-size: 287px;
             &-stepUno {
-              // border: 1px solid;
               height: auto;
               width: 364px;
               margin: 22px 0 0 56px;
-              // line-height: 1.8rem;
               font-size: 1.6rem;
               line-height: 1.8rem;
             }
             &-stepDos {
-            //   // border: 1px solid green;
               height: auto;
               width: 371px;
               margin: 45px 0 0 22px;
-            //   line-height: 1.8rem;
             }
             &-stepTres {
-              // border: 1px solid blue;
               height: auto;
               width: 391px;
               margin: 53px 0 0 48px;
-              // line-height: 1.8rem;
             }
           }
           &-person {
-            // border: 1px solid red;
             height: 407px;
             width: 150.86px;
             top: -65px;
@@ -608,8 +505,6 @@
         }
       }
       .content-novedades {
-        // margin-block-end: 97px;
-        // padding-inline: 16px;
         block-size: 490px;
         padding-inline-start: 228px;
         margin-block-end: 0px;
@@ -622,13 +517,11 @@
           line-height: 3.8rem;
         }
         &__items {
-          // border: 1px solid blue;
           margin-block-start: 41px;
           inline-size: 1014px;
           display: flex;
           justify-content: space-between;
           &-item {
-            // inline-size: 399px;
             display: flex;
             margin-block-end: 20px;
             img {
@@ -637,7 +530,6 @@
             p {
               inline-size: 399px;
               font-size: 1.6rem;
-              // background: pink;
             }
           }
         }
@@ -645,7 +537,6 @@
           display: block;
           @include base_btn(52px, 193px);
           margin-block-start: 98px;
-          // margin-block-end: 47px;
           font-size: 1.6rem;
           font-weight: 700;
           line-height: 2rem;
