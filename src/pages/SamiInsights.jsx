@@ -15,6 +15,7 @@ import infraStepTresM from '../images/funcionalidad-step3-M.png'
 import infraStepUnoD from '../images/funcionalidad-step1-D.png';
 import infraStepDosD from '../images/funcionalidad-step2-D.png';
 import infraStepTresD from '../images/funcionalidad-step3-D.png';
+import checkImg from '../images/check.png';
 
 function SamiInsights() {
   return(
@@ -96,6 +97,41 @@ function SamiInsights() {
               </div>
             </section>
           </div>
+            <section className="content-novedades">
+              <p className="itemSubtitulo">NOVEDADES</p>
+              <p className="subtitulo">Próximamente en SAMI podrás saber sobre:</p>
+              <div className="content-novedades__items">
+              <div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Qué materias son las más inspeccionadas.</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Intendencias con mayor indice de "multabilidad".</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Rango de multas más frecuentes por inspector y resolutor.</p>
+                </div>
+              </div>
+              <div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Qué materias son las más sancionadas.</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Materias sancionadas con mayor indice de reducción de multa en 2da instancia</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Materias sancionadas con mayor indice de revocatoria de multa.</p>
+                </div>
+              </div>
+              </div>
+              <button>Contáctanos</button>
+            </section>
         </div>
       </main>
       <Footer />
