@@ -77,7 +77,6 @@
       }
     }
     .content-samiInsights {
-      // border: 1px solid red;
       block-size: 566px;
       min-inline-size: 327px;
       max-inline-size: 1063px;
@@ -103,7 +102,6 @@
         height: 374px;
         display: flex;
         position: relative;
-        // border: 1px solid blue;
         .bigStepsIcon-oculto {
           display: none;
         }
@@ -112,26 +110,22 @@
           position: absolute;
         }
         &-description {
-          // border: 1px solid yellow;
           display: flex;
           flex-direction: column;
           inline-size: 287px;
           &-stepUno {
-            // border: 1px solid;
             height: 104px;
             width: 153px;
             margin: 15px 0 0 68px;
             line-height: 1.8rem;
           }
           &-stepDos {
-            // border: 1px solid green;
             height: 100px;
             width: 230px;
             margin: 45px 0 0 24px;
             line-height: 1.8rem;
           }
           &-stepTres {
-            // border: 1px solid blue;
             height: 73px;
             width: 253px;
             margin: 13px 0 0 56px;
@@ -139,12 +133,83 @@
           }
         }
         &-person {
-          // border: 1px solid red;
           height: 289px;
           width: 123.63px;
           position: absolute;
           top: -65px;
           right: -20px;
+        }
+      }
+    }
+
+    .content-funcionalidades {
+      .subtitulo {
+        inline-size: 282px;
+      }
+      .logoIcon-oculto {
+        visibility: hidden;
+      }
+      &__containerSteps {
+        span {
+          font-size: 3.5rem;
+          font-weight: 700;
+          line-height: 4.3rem;
+          color: #969CBA;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-inline-start: 8px;
+        }
+        &-stepUno {
+          margin-block-start: 55px;
+          &-description {
+            display: flex;
+            p {
+              inline-size: 282px;
+              margin-block-start: 8px;
+            }
+          }
+          &-images {
+            margin-block-start: 8px;
+            .infraccionesImgD {
+              display: none;
+            }
+          }
+        }
+        &-stepDos {
+          margin-block-start: 30px;
+          &-description {
+            display: flex;
+            p {
+              inline-size: 274px;
+              margin-block-start: 10px;
+            }
+          }
+          &-images {
+            margin-block-start: 8px;
+            .riesgoImgD {
+              display: none;
+            }
+          }
+        }
+        &-stepTres {
+          margin-block-start: 32px;
+          block-size: 350px;
+          position: relative;
+          &-description {
+            display: flex;
+            p {
+              inline-size: 262px;
+              margin-block-start: 10px;
+            }
+          }
+          &-images {
+            margin-block-start: 8px;
+            .inspectorImgD {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -154,14 +219,6 @@
 @media screen and (min-width: 480px) {
   .container-samiInsights {
     &__main {
-      // &-wrapperTop {
-      //   margin: auto;
-      //   &-content {
-      //     background: $white;
-      //     margin-inline: 16px;
-      //   }
-      // }
-  
       .content-samiInsights {
         &__steps {
           // margin-block-start: 21px;
@@ -427,6 +484,102 @@
             left: 557px;
           }
           
+        }
+      }
+      .content-funcionalidades {
+        margin-block-start: 100px;
+        margin-inline-start: 210px;
+        .itemSubtitulo {
+          font-size: 1.2rem;
+          line-height: 4rem;
+        }
+        .subtitulo {
+          inline-size: 568px;
+          font-size: 3.2rem;
+          line-height: 3.9rem;
+        }
+        .logoIcon-oculto {
+          visibility: visible;
+        }
+        &__containerSteps {
+          span {
+            font-size: 200px;
+            line-height: 144px;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-inline-start: 8px;
+          }
+          &-stepUno {
+            block-size: 244px;
+            margin-block-start: 55px;
+            position: relative;
+            &-description {
+              display: flex;
+              p {
+                inline-size: 529px;
+                margin-block-start: 8px;
+              }
+            }
+            &-images {
+              margin-block-start: 8px;
+              position: absolute;
+              top: 65px;
+              left: 82px;
+              .infraccionesImgM {
+                display: none;
+              }
+              .infraccionesImgD {
+                display: block;
+              }
+            }
+          }
+          &-stepDos {
+            margin-block-start: 103px;
+            margin-inline-start: 43px;
+            display: flex;
+            &-description {
+              display: flex;
+              p {
+                inline-size: 247px;
+                margin-block-start: 45px;
+              }
+            }
+            &-images {
+              margin-block-start: -10px;
+              margin-inline-start: 43px;
+              .riesgoImgM {
+                display: none;
+              }
+              .riesgoImgD {
+                display: block;
+              }
+            }
+          }
+          &-stepTres {
+            margin-block-start: 119px;
+            margin-inline-start: 113px;
+            block-size: 630px;
+            display: flex;
+            &-description {
+              display: flex;
+              p {
+                margin-block-start: 30px;
+                inline-size: 306px;
+              }
+            }
+            &-images {
+              margin-block-start: 8px;
+              .inspectorImgM {
+                display: none;
+              }
+              .inspectorImgD {
+                display: block;
+                margin-block-start: -55px;
+              }
+            }
+          }
         }
       }
     }
