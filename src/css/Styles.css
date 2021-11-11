@@ -2269,7 +2269,7 @@ body p {
   .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres {
     margin-block-start: 119px;
     margin-inline-start: 113px;
-    block-size: 630px;
+    block-size: auto;
     display: flex;
   }
   .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-description {
@@ -2292,6 +2292,7 @@ body p {
   .container-samiInsights__main .content-novedades {
     block-size: 490px;
     padding-inline-start: 228px;
+    margin-block-start: 85px;
     margin-block-end: 0px;
   }
   .container-samiInsights__main .content-novedades .itemSubtitulo {
