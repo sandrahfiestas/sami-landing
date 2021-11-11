@@ -326,6 +326,8 @@
   .container-samiInsights{
     &__hero {
       block-size: 301px;
+      max-inline-size: 1207px;
+      margin: auto;
       background-image: url("../images/background-D-porqueSami.png");
       background-repeat: no-repeat;
       background-position-x: center;
@@ -349,6 +351,8 @@
       .content-samiInsights {
         padding: 52px 0px 0 78px;
         margin: auto;
+          background-image: url("../images/background-beneficios.png");
+
         .itemSubtitulo {
           font-size: 1.2rem;
           line-height: 4rem;
