@@ -2,20 +2,20 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logoIcon from '../images/logo-Sami.png'
+import circleIcon from '../images/back-circle.png';
+import puntosIcon from '../images/back-puntos.png';
+import equisIcon from '../images/back-equis.png';
 import logoInsightsIcon from '../images/logoTipo-insights.png'
 import smallStepsIcon from '../images/steps-M.png';
 import bigStepsIcon from '../images/steps-D.png';
 import personImage from '../images/person.png';
-
-
-
-import circleIcon from '../images/back-circle.png';
-import puntosIcon from '../images/back-puntos.png';
-import equisIcon from '../images/back-equis.png';
-// import capacidadesImage from '../images/capacidades.png';
-// import { ReactComponent as RepeatIcon } from '../images/svg/repeat.svg';
-// import { ReactComponent as AlertIcon } from '../images/svg/alert.svg';
-// import { ReactComponent as UsersIcon } from '../images/svg/users.svg';
+import infraStepUnoM from '../images/funcionalidad-step1-M.png'
+import infraStepDosM from '../images/funcionalidad-step2-M.png'
+import infraStepTresM from '../images/funcionalidad-step3-M.png'
+import infraStepUnoD from '../images/funcionalidad-step1-D.png';
+import infraStepDosD from '../images/funcionalidad-step2-D.png';
+import infraStepTresD from '../images/funcionalidad-step3-D.png';
+import checkImg from '../images/check.png';
 
 function SamiInsights() {
   return(
@@ -33,14 +33,16 @@ function SamiInsights() {
             <img src={logoIcon} alt="logo Sami" />
           </div>
           <p className="container-samiInsights__hero-title-description">Y vive tus fiscalizaciones más data-driven.</p>
-          <button>Descubre más</button>
+          <button>
+            <a className="aNoStyle" href="#beneficios">Descubre más</a>
+          </button>
         </div>
       </div>
 
       <main className="container-samiInsights__main">
         <div className="container-samiInsights__main-wrapperTop">
           <div className="container-samiInsights__main-wrapperTop-content">
-            <section className="content-samiInsights">
+            <section id="beneficios" className="content-samiInsights">
               {/* <div className="content-samiInsights-border" /> */}
               <p className="itemSubtitulo">BENEFICIOS</p>
               <p className="subtitulo">
@@ -57,54 +59,85 @@ function SamiInsights() {
                 </div>
                 <img src={personImage} alt="usuario" className="content-samiInsights__steps-person" />
               </div>
-                
-              <button>Solicita una demo</button>
+              <button>
+                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita una demo</a>
+              </button>
             </section>
 
-
-            {/* <section className="content-coreSami">
-              <div>
-                <p className="itemSubtitulo">CORE SAMI</p>
-                <h2 className="subtitulo">Mejores servicios legales centrados en las personas</h2>
-                <p className="content-coreSami-description">El diseño centrado en el ser humano ha sido una metodología de innovación dominante en las industrias de servicios, desde la medicina hasta los seguros y las finanzas y que hoy sirven también al sistema legal, mejorarando el acceso de las personas a la justicia,  promoviendo la innovación y creando servicios legales más humanos.</p>
+            <section className="content-funcionalidades">
+              <p className="itemSubtitulo">FUNCIONALIDADES</p>
+              <p className="subtitulo">Descubre la experiencia con Sami Insights <img src={logoIcon} alt="logo Sami" className="logoIcon-oculto" /></p>
+              <div className= "content-funcionalidades__containerSteps">
+                <div className= "content-funcionalidades__containerSteps-stepUno">
+                  <div className= "content-funcionalidades__containerSteps-stepUno-description">
+                    <span>1</span>
+                    <p>Entérate de la documentación, las infracciones y las resoluciones que estén relacionadas a los temas de tu cartera al instante.</p>
+                  </div>
+                  <div className= "content-funcionalidades__containerSteps-stepUno-images">
+                    <img src={infraStepUnoM} alt="materias" className="infraccionesImgM" />
+                    <img src={infraStepUnoD} alt="materias" className="infraccionesImgD" />
+                  </div>
+                </div>
+                <div className= "content-funcionalidades__containerSteps-stepDos">
+                  <div className= "content-funcionalidades__containerSteps-stepDos-description">
+                    <span>2</span>
+                    <p>Analiza de forma rápida y fácil el riesgo monetario y crítico de tu cartera, Sin perder el control de tus inspecciones</p>
+                  </div>
+                  <div className= "content-funcionalidades__containerSteps-stepDos-images">
+                    <img src={infraStepDosM} alt="riesgo" className="riesgoImgM" />
+                    <img src={infraStepDosD} alt="riesgo" className="riesgoImgD" />
+                  </div> 
+                </div>
+                <div className= "content-funcionalidades__containerSteps-stepTres">
+                  <div className= "content-funcionalidades__containerSteps-stepTres-description">
+                    <span>3</span>
+                    <p>Conoce de cerca el <strong>perfil de tu inspector y funcionario.</strong> Evalúa estrategias según los casos y temas de mayor impacto.</p>
+                  </div>
+                  <div className= "content-funcionalidades__containerSteps-stepTres-images">
+                    <img src={infraStepTresM} alt="imagen inspector" className="inspectorImgM" />
+                    <img src={infraStepTresD} alt="imagen inspector" className="inspectorImgD" />
+                  </div>
+                </div>
               </div>
-              <div className="d-flex justify-content-center">
-                <img src={capacidadesImage} alt="imagen diseño legal" className="content-coreSami-imagenCapacidades" />
-              </div>
-            </section> */}
+            </section>
           </div>
-          {/* <div className="container-porqueSami__main-wrapperDown">
-            <section className="content-addOnd">
-              <p className="itemSubtitulo">ADD OND</p>
-              <h2 className="subtitulo">Agiliza tus inspecciones con nuestros servicios</h2>
-              <div className="content-addOnd__pasos">
-                <div className="content-addOnd__pasos-paso">
-                  <p className="content-addOnd__pasos-paso-number">1</p>
-                  <div className="content-addOnd__pasos-paso-description">
-                    <strong>Sincroniza tu casilla electrónica</strong>
-                    <p>Recibe las notificaciones de tu casilla sin tener que ingresar a tu buzón, solo enlaza a SUNAFIL con Sami y ¡Listo!.</p>
-                    <RepeatIcon className="content-addOnd__pasos-paso-icon" />
-                  </div>
+            <section className="content-novedades">
+              <p className="itemSubtitulo">NOVEDADES</p>
+              <p className="subtitulo">Próximamente en SAMI podrás saber sobre:</p>
+              <div className="content-novedades__items">
+              <div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Qué materias son las más inspeccionadas.</p>
                 </div>
-                <div className="content-addOnd__pasos-paso itemTwo">
-                  <p className="content-addOnd__pasos-paso-number">2</p>
-                  <div className="content-addOnd__pasos-paso-description">
-                    <strong>Alerta nueva inspección</strong>
-                    <p>Ten la fecha y detalle de la inspección para que te anticipes y estés listo.</p>
-                    <AlertIcon className="content-addOnd__pasos-paso-icon" />
-                  </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Intendencias con mayor indice de "multabilidad".</p>
                 </div>
-                <div className="content-addOnd__pasos-paso">
-                  <p className="content-addOnd__pasos-paso-number">3</p>
-                  <div className="content-addOnd__pasos-paso-description">
-                    <strong>Servicio paralegal</strong>
-                    <p>Nos encargamos del trabajo operativo con Sami Paralegal para que tú te enfoques en la gestión y estrategia de tu cartera de casos.</p>
-                    <UsersIcon className="content-addOnd__pasos-paso-icon" />
-                  </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Rango de multas más frecuentes por inspector y resolutor.</p>
                 </div>
               </div>
+              <div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Qué materias son las más sancionadas.</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Materias sancionadas con mayor indice de reducción de multa en 2da instancia</p>
+                </div>
+                <div className="content-novedades__items-item">
+                  <img src={checkImg} alt="check"/>
+                  <p>Materias sancionadas con mayor indice de revocatoria de multa.</p>
+                </div>
+              </div>
+              </div>
+              <button>
+                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Contáctanos</a>
+              </button>
             </section>
-          </div> */}
         </div>
       </main>
       <Footer />

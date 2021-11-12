@@ -28,6 +28,7 @@
       margin-block-start: 17px;
       position: absolute;
       left: 0;
+      z-index: 1;
       &-brujula {
         block-size: 37.44px;
         inline-size: 68.85px;
@@ -55,8 +56,11 @@
     .container-user {
       margin-block-start: -65px;
       block-size: 289px;
-      inline-size: 205px;
       overflow: hidden;
+      // inline-size: 205px;
+      inline-size: 220px;
+      position: absolute;
+      margin-right: -16px;
     }
     &-user {
       block-size: 289px;
@@ -193,6 +197,10 @@
         block-size: 388.61px;
         inline-size: 354.33px;
         margin-block-start: 25px;
+        //
+        block-size: 388.61px;
+        inline-size: 354.33px;
+        //
       }
 
       .container-userBusqueda {

@@ -1,5 +1,6 @@
 .content-testimonios {
   margin-block-start: 30px;
+  margin-block-end: 46px;
   padding-inline-start: 11px;
   padding-inline-end: 11px;
   padding-block-start: 65px;
@@ -44,10 +45,11 @@
         }
         span {
           font-size: 22px;
-          line-height: 48px;
+          line-height: 28px;
           font-weight: 700;
         }
         p {
+          margin-block-start: 10px;
           inline-size: 215.87px;
           font-size: 12px;
           line-height: 15px;
@@ -75,6 +77,8 @@
   .content-testimonios {
     margin-block-start: 0px;
     padding-block-start: 0px;
+    block-size: auto;
+    margin-block-end: 100px;
 
     .itemSubtitulo {
       font-size: 1.2rem;

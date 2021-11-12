@@ -146,7 +146,7 @@ body p {
   margin-block-start: -35px;
 }
 .container-home__main-wrapperTop {
-  max-inline-size: 1440px;
+  max-inline-size: 1063px;
   margin: auto;
 }
 .container-home__main-wrapperTop-content {
@@ -243,6 +243,11 @@ body p {
   }
 }
 @media screen and (min-width: 1024px) {
+  .container-home__main-wrapperTop-content {
+    background-image: url("../images/background-skyblue-D.png");
+    background-position-y: 182px;
+    background-size: auto 1065px;
+  }
   .container-home .content-descubre {
     padding-block-start: 55px;
     padding-inline-start: 74px;
@@ -292,7 +297,7 @@ body p {
 .container-navbar {
   top: 0;
   position: sticky;
-  z-index: 1;
+  z-index: 3;
 }
 
 .container-navbar .navbar {
@@ -441,6 +446,7 @@ body p {
   margin-block-start: 17px;
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 .options-images__left-brujula {
   block-size: 37.44px;
@@ -465,8 +471,10 @@ body p {
 .options-images .container-user {
   margin-block-start: -65px;
   block-size: 289px;
-  inline-size: 205px;
   overflow: hidden;
+  inline-size: 220px;
+  position: absolute;
+  margin-right: -16px;
 }
 .options-images-user {
   block-size: 289px;
@@ -573,6 +581,8 @@ body p {
     block-size: 388.61px;
     inline-size: 354.33px;
     margin-block-start: 25px;
+    block-size: 388.61px;
+    inline-size: 354.33px;
   }
   .options-images .container-userBusqueda {
     block-size: 388.61px;
@@ -674,6 +684,7 @@ body p {
 }
 .content-testimonios {
   margin-block-start: 30px;
+  margin-block-end: 46px;
   padding-inline-start: 11px;
   padding-inline-end: 11px;
   padding-block-start: 65px;
@@ -717,10 +728,11 @@ body p {
 }
 .content-testimonios .slider-container__slider-profile-top span {
   font-size: 22px;
-  line-height: 48px;
+  line-height: 28px;
   font-weight: 700;
 }
 .content-testimonios .slider-container__slider-profile-top p {
+  margin-block-start: 10px;
   inline-size: 215.87px;
   font-size: 12px;
   line-height: 15px;
@@ -738,6 +750,8 @@ body p {
   .content-testimonios {
     margin-block-start: 0px;
     padding-block-start: 0px;
+    block-size: auto;
+    margin-block-end: 100px;
   }
   .content-testimonios .itemSubtitulo {
     font-size: 1.2rem;
@@ -799,11 +813,12 @@ body p {
   }
 }
 .container-inspecciones {
-  margin-block-start: 50px;
+  max-inline-size: 1440px;
   padding-block-start: 33px;
   block-size: 344px;
   padding-inline: 27px 10px;
   background: #EFF2F9;
+  margin: auto;
 }
 .container-inspecciones .content-inspecciones {
   margin: auto;
@@ -912,7 +927,8 @@ body p {
 .container-planes {
   margin-block-start: 48px;
   padding-inline-start: 47px;
-  padding-inline-start: 11px;
+  padding-inline: 27px;
+  margin-block-end: 70px;
 }
 .container-planes__content {
   background: white;
@@ -927,6 +943,32 @@ body p {
   flex-direction: column;
   align-items: center;
 }
+.container-planes__content-container-options {
+  margin-bottom: 33px;
+}
+.container-planes__content-container .containerCards-M .carousel {
+  block-size: 577px;
+  inline-size: 341px;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-indicators {
+  top: -32px;
+  bottom: auto;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-indicators button {
+  height: 8.8px;
+  width: 8.8px;
+  border-radius: 50%;
+  border-top: 0;
+  border-bottom: 0;
+  background: #FF3355;
+  margin-inline: 8px;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-inner {
+  height: 100%;
+}
+.container-planes__content-container .containerCards-D {
+  display: none;
+}
 .container-planes__content-container-cards {
   margin-block-start: 27px;
 }
@@ -937,6 +979,7 @@ body p {
   border: 1px solid #DEDEDE;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
+  margin: auto;
 }
 .container-planes__content-container-cards-card-title {
   font-size: 2.2rem;
@@ -1035,6 +1078,12 @@ body p {
   .container-planes__content-container {
     margin-block-start: 37px;
   }
+  .container-planes__content-container .containerCards-M {
+    display: none;
+  }
+  .container-planes__content-container .containerCards-D {
+    display: block;
+  }
   .container-planes__content-container-cards {
     display: flex;
     justify-content: space-between;
@@ -1053,6 +1102,7 @@ body p {
     bottom: 40px;
   }
   .container-planes__content-container-cards .premium {
+    margin-block-start: 16px;
     block-size: 695px;
     inline-size: 335px;
   }
@@ -1123,6 +1173,44 @@ body p {
   letter-spacing: 0.3px;
 }
 
+#modal-okContactanos .modal-content {
+  border-radius: 5px;
+}
+#modal-okContactanos .modal-dialog {
+  margin: 0;
+  pointer-events: all;
+}
+#modal-okContactanos .modal-okContactanos {
+  height: 437px;
+  width: 308px;
+  margin-left: 30px;
+}
+#modal-okContactanos .modal-okContactanos .div-btnClose {
+  padding: 16px 17px 0 0;
+}
+#modal-okContactanos .modal-okContactanos .body-ok {
+  margin-block-start: 32px;
+}
+#modal-okContactanos .modal-okContactanos .body-ok img {
+  height: 60px;
+  width: 60px;
+}
+#modal-okContactanos .modal-okContactanos .body-ok .title {
+  margin-top: 22px;
+  width: 177px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+#modal-okContactanos .modal-okContactanos .body-ok .description {
+  margin-top: 29px;
+  width: 228px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .contactanos .container-contactanos__form {
     inline-size: 691px;
@@ -1161,6 +1249,30 @@ body p {
     line-height: 1.6rem;
     letter-spacing: 0.2px;
     margin: 19px auto auto 0;
+  }
+
+  #modal-okContactanos .modal-okContactanos {
+    height: 451px;
+    width: 592px;
+    margin-left: 0px;
+  }
+  #modal-okContactanos .modal-okContactanos .div-btnClose {
+    padding: 26px 31px 0 0;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok {
+    margin-block-start: 22px;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok .title {
+    margin-top: 24px;
+    width: 312px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok .description {
+    margin-top: 38px;
+    width: 343px;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 }
 .footer .container-footer {
@@ -1949,6 +2061,97 @@ body p {
   top: -65px;
   right: -20px;
 }
+.container-samiInsights__main .content-funcionalidades .subtitulo {
+  inline-size: 282px;
+}
+.container-samiInsights__main .content-funcionalidades .logoIcon-oculto {
+  visibility: hidden;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.3rem;
+  color: #969CBA;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-inline-start: 8px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepUno {
+  margin-block-start: 55px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-description {
+  display: flex;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-description p {
+  inline-size: 282px;
+  margin-block-start: 8px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-images {
+  margin-block-start: 8px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-images .infraccionesImgD {
+  display: none;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepDos {
+  margin-block-start: 30px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-description {
+  display: flex;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-description p {
+  inline-size: 274px;
+  margin-block-start: 10px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-images {
+  margin-block-start: 8px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-images .riesgoImgD {
+  display: none;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepTres {
+  margin-block-start: 32px;
+  block-size: 350px;
+  position: relative;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-description {
+  display: flex;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-description p {
+  inline-size: 262px;
+  margin-block-start: 10px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-images {
+  margin-block-start: 8px;
+}
+.container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-images .inspectorImgD {
+  display: none;
+}
+.container-samiInsights__main .content-novedades {
+  background: #EFF2F9;
+  padding-block-end: 97px;
+  padding-inline: 16px;
+}
+.container-samiInsights__main .content-novedades__items {
+  margin-block-start: 31px;
+}
+.container-samiInsights__main .content-novedades__items-item {
+  display: flex;
+  margin-block-end: 18px;
+}
+.container-samiInsights__main .content-novedades__items-item img {
+  margin-inline-end: 12px;
+  height: 20px;
+  width: 20px;
+}
+.container-samiInsights__main .content-novedades__items-item p {
+  inline-size: 253px;
+  line-height: 2rem;
+}
+.container-samiInsights__main .content-novedades button {
+  display: none;
+}
 
 @media screen and (min-width: 480px) {
   .container-samiInsights__main .content-samiInsights__steps {
@@ -2023,6 +2226,8 @@ body p {
 @media screen and (min-width: 1024px) {
   .container-samiInsights__hero {
     block-size: 301px;
+    max-inline-size: 1207px;
+    margin: auto;
     background-image: url("../images/background-D-porqueSami.png");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -2042,6 +2247,7 @@ body p {
   .container-samiInsights__main .content-samiInsights {
     padding: 52px 0px 0 78px;
     margin: auto;
+    background-image: url("../images/background-beneficios.png");
   }
   .container-samiInsights__main .content-samiInsights .itemSubtitulo {
     font-size: 1.2rem;
@@ -2105,6 +2311,148 @@ body p {
     width: 150.86px;
     top: -65px;
     left: 557px;
+  }
+  .container-samiInsights__main .content-funcionalidades {
+    margin-block-start: 100px;
+    margin-inline-start: 210px;
+  }
+  .container-samiInsights__main .content-funcionalidades .itemSubtitulo {
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
+  .container-samiInsights__main .content-funcionalidades .subtitulo {
+    inline-size: 568px;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+  }
+  .container-samiInsights__main .content-funcionalidades .logoIcon-oculto {
+    visibility: visible;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps span {
+    font-size: 200px;
+    line-height: 144px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-inline-start: 8px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno {
+    block-size: 244px;
+    margin-block-start: 55px;
+    position: relative;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-description {
+    display: flex;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-description p {
+    inline-size: 529px;
+    margin-block-start: 8px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-images {
+    margin-block-start: 8px;
+    position: absolute;
+    top: 65px;
+    left: 82px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-images .infraccionesImgM {
+    display: none;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepUno-images .infraccionesImgD {
+    display: block;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos {
+    margin-block-start: 103px;
+    margin-inline-start: 43px;
+    display: flex;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-description {
+    display: flex;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-description p {
+    inline-size: 247px;
+    margin-block-start: 45px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-images {
+    margin-block-start: -10px;
+    margin-inline-start: 43px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-images .riesgoImgM {
+    display: none;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepDos-images .riesgoImgD {
+    display: block;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres {
+    margin-block-start: 119px;
+    margin-inline-start: 113px;
+    block-size: auto;
+    display: flex;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-description {
+    display: flex;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-description p {
+    margin-block-start: 30px;
+    inline-size: 306px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-images {
+    margin-block-start: 8px;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-images .inspectorImgM {
+    display: none;
+  }
+  .container-samiInsights__main .content-funcionalidades__containerSteps-stepTres-images .inspectorImgD {
+    display: block;
+    margin-block-start: -55px;
+  }
+  .container-samiInsights__main .content-novedades {
+    block-size: 490px;
+    padding-inline-start: 228px;
+    margin-block-start: 85px;
+    margin-block-end: 0px;
+  }
+  .container-samiInsights__main .content-novedades .itemSubtitulo {
+    font-size: 1.2rem;
+    line-height: 4rem;
+  }
+  .container-samiInsights__main .content-novedades .subtitulo {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .container-samiInsights__main .content-novedades__items {
+    margin-block-start: 41px;
+    inline-size: 1014px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-samiInsights__main .content-novedades__items-item {
+    display: flex;
+    margin-block-end: 20px;
+  }
+  .container-samiInsights__main .content-novedades__items-item img {
+    margin-inline-end: 8px;
+  }
+  .container-samiInsights__main .content-novedades__items-item p {
+    inline-size: 399px;
+    font-size: 1.6rem;
+  }
+  .container-samiInsights__main .content-novedades button {
+    display: block;
+    height: 52px;
+    width: 193px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF3355;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #FF3355;
+    margin-block-start: 98px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 3%;
   }
 }
 

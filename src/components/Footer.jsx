@@ -16,7 +16,9 @@ function Footer() {
           <p className="container-footer__logoBtn-conversemos">¡Conversémos!</p>
           <p className="container-footer__logoBtn-escribenos">Escríbenos.</p>
           <button>
-            <a className="aNoStyle" href="#contactanos">Contáctanos</a></button>
+            <a className="aNoStyle" href="http://localhost:3000/#contactanos">Contáctanos</a>
+            {/* <a className="aNoStyle" href="#contactanos">Contáctanos</a> */}
+          </button>
           </div>
         <div className="container-footer__info">
           <h2>Contáctanos a través de:</h2>
