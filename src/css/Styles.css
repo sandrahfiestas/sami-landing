@@ -1171,6 +1171,44 @@ body p {
   letter-spacing: 0.3px;
 }
 
+#modal-okContactanos .modal-content {
+  border-radius: 5px;
+}
+#modal-okContactanos .modal-dialog {
+  margin: 0;
+  pointer-events: all;
+}
+#modal-okContactanos .modal-okContactanos {
+  height: 437px;
+  width: 308px;
+  margin-left: 30px;
+}
+#modal-okContactanos .modal-okContactanos .div-btnClose {
+  padding: 16px 17px 0 0;
+}
+#modal-okContactanos .modal-okContactanos .body-ok {
+  margin-block-start: 32px;
+}
+#modal-okContactanos .modal-okContactanos .body-ok img {
+  height: 60px;
+  width: 60px;
+}
+#modal-okContactanos .modal-okContactanos .body-ok .title {
+  margin-top: 22px;
+  width: 177px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+#modal-okContactanos .modal-okContactanos .body-ok .description {
+  margin-top: 29px;
+  width: 228px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .contactanos .container-contactanos__form {
     inline-size: 691px;
@@ -1209,6 +1247,30 @@ body p {
     line-height: 1.6rem;
     letter-spacing: 0.2px;
     margin: 19px auto auto 0;
+  }
+
+  #modal-okContactanos .modal-okContactanos {
+    height: 451px;
+    width: 592px;
+    margin-left: 0px;
+  }
+  #modal-okContactanos .modal-okContactanos .div-btnClose {
+    padding: 26px 31px 0 0;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok {
+    margin-block-start: 22px;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok .title {
+    margin-top: 24px;
+    width: 312px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  #modal-okContactanos .modal-okContactanos .body-ok .description {
+    margin-top: 38px;
+    width: 343px;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 }
 .footer .container-footer {

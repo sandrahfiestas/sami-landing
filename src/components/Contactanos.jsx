@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
+import {
+  Modal,
+ } from 'react-bootstrap';
 import serviceContact from '../data/api/ContactService';
 import { Form as FinalForm, Field } from 'react-final-form';
+import closeIcon from '../images/svg/close.svg';
+import checkIcon from '../images/svg/check-circle.svg';
 
 function Contactanos() {
+  const [showModalOk, setShowModalOk] = useState(false);
+  const handleShowModalOk = () => setShowModalOk(true);
+  const handleCloseModalOk = () => setShowModalOk(false);
 
   const [initialDataContact, setInitialDataContact] = useState({
     nombres: '',
@@ -10,18 +18,23 @@ function Contactanos() {
     empresa: '',
     cargo: '',
   });
-    const enviaDataContactanos = async (values) => {
-      const dataContact = {
-        nombre_completo: values.nombres,
-        correo_electronico: values.correo,
-        empresa: values.empresa,
-        cargo: values.cargo,
-      }
-      console.log(dataContact);
-      setInitialDataContact({...initialDataContact});
-      await serviceContact.saveContact(dataContact).then((response) => {
-        console.log(response);
-      })
+    // const enviaDataContactanos = async (values) => {
+    //   const dataContact = {
+    //     nombre_completo: values.nombres,
+    //     correo_electronico: values.correo,
+    //     empresa: values.empresa,
+    //     cargo: values.cargo,
+    //   }
+    //   console.log(dataContact);
+    //   setInitialDataContact({...initialDataContact});
+    //   await serviceContact.saveContact(dataContact).then((response) => {
+    //     // handleShowModalOk();
+    //     console.log(response);
+    //   })
+    // }
+
+    const enviaDataContactanos = () => {
+      handleShowModalOk();
     }
 
   return (
@@ -70,6 +83,31 @@ function Contactanos() {
             )}
           />
       </div>
+      <Modal
+        show={showModalOk}
+        onHide={handleCloseModalOk}
+        keyboard={false}
+        className="modal fade"
+        id="modal-okContactanos"
+        tabIndex="-1"
+        aria-labelledby="contained-modal-title-vcenter"
+        aria-hidden="true"
+        centered
+      >
+      <div className="d-flex modal-dialog modal-okContactanos">
+        <div className="container-modal" style={{ width: '100%' }}>
+          <div className="header-ok d-flex justify-content-end div-btnClose">
+            <img src={closeIcon} alt="cerrar" onClick={handleCloseModalOk} style={{ cursor: 'pointer' }} />
+          </div>
+
+          <div className="body-ok d-flex flex-column justify-content-center align-items-center">
+            <img src={checkIcon} alt="ok"/>
+            <p className="title">¡Te has registrado correctamente!</p>
+            <p className="description">Gracias por confiar en nosotros para la gestión de tus casos. <br />En las próximas 24 horas nos pondremos en contacto contigo.</p>
+          </div>
+        </div>
+      </div>
+      </Modal>
     </div>
   )
 }
