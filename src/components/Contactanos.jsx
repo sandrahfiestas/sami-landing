@@ -18,23 +18,19 @@ function Contactanos() {
     empresa: '',
     cargo: '',
   });
-    // const enviaDataContactanos = async (values) => {
-    //   const dataContact = {
-    //     nombre_completo: values.nombres,
-    //     correo_electronico: values.correo,
-    //     empresa: values.empresa,
-    //     cargo: values.cargo,
-    //   }
-    //   console.log(dataContact);
-    //   setInitialDataContact({...initialDataContact});
-    //   await serviceContact.saveContact(dataContact).then((response) => {
-    //     // handleShowModalOk();
-    //     console.log(response);
-    //   })
-    // }
-
-    const enviaDataContactanos = () => {
-      handleShowModalOk();
+    const enviaDataContactanos = async (values) => {
+      const dataContact = {
+        nombre_completo: values.nombres,
+        correo_electronico: values.correo,
+        empresa: values.empresa,
+        cargo: values.cargo,
+      }
+      console.log(dataContact);
+      setInitialDataContact({...initialDataContact});
+      await serviceContact.saveContact(dataContact).then((response) => {
+        handleShowModalOk();
+        console.log(response);
+      })
     }
 
   return (
