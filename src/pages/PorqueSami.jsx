@@ -28,13 +28,15 @@ function PorqueSami() {
           <p className="container-porqueSami__hero-title-hi">¿POR QUÉ SAMI?</p>
           <h1>Los grandes éxitos viene de la mano de grandes alianzas</h1>
           <p className="container-porqueSami__hero-title-description"><strong>Sami</strong> y nuestras soluciones, han sido desarrolladas con el respaldo del estudio <strong>Miranda&Amado</strong> y bajo el marco de las mejores prácticas en tecnología e innovación.</p>
-          <button>Conoce más</button>
+          <button>
+            <a className="aNoStyle" href="#descubreComo">Conoce más</a>
+          </button>
         </div>
       </div>
       <main className="container-porqueSami__main">
         <div className="container-porqueSami__main-wrapperTop">
           <div className="container-porqueSami__main-wrapperTop-content">
-            <section className="content-descubreComo">
+            <section id="descubreComo" className="content-descubreComo">
               {/* <div className="content-descubreComo-border" /> */}
               <div className="content-descubreComo-top">
                 <div>
@@ -48,7 +50,9 @@ function PorqueSami() {
                   <img src={logoMiranda} alt="logo Miranda y Amado" className="content-descubreComo-logoMiranda" />
                 </div>
               </div>
-              <button>Solicita una demo</button>
+              <button>
+                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita una demo</a>
+              </button>
             </section>
             <section className="content-coreSami">
               <div>

@@ -33,14 +33,16 @@ function SamiInsights() {
             <img src={logoIcon} alt="logo Sami" />
           </div>
           <p className="container-samiInsights__hero-title-description">Y vive tus fiscalizaciones más data-driven.</p>
-          <button>Descubre más</button>
+          <button>
+            <a className="aNoStyle" href="#beneficios">Descubre más</a>
+          </button>
         </div>
       </div>
 
       <main className="container-samiInsights__main">
         <div className="container-samiInsights__main-wrapperTop">
           <div className="container-samiInsights__main-wrapperTop-content">
-            <section className="content-samiInsights">
+            <section id="beneficios" className="content-samiInsights">
               {/* <div className="content-samiInsights-border" /> */}
               <p className="itemSubtitulo">BENEFICIOS</p>
               <p className="subtitulo">
@@ -57,7 +59,9 @@ function SamiInsights() {
                 </div>
                 <img src={personImage} alt="usuario" className="content-samiInsights__steps-person" />
               </div>
-              <button>Solicita una demo</button>
+              <button>
+                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita una demo</a>
+              </button>
             </section>
 
             <section className="content-funcionalidades">
@@ -130,7 +134,9 @@ function SamiInsights() {
                 </div>
               </div>
               </div>
-              <button>Contáctanos</button>
+              <button>
+                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Contáctanos</a>
+              </button>
             </section>
         </div>
       </main>

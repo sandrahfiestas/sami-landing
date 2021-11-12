@@ -146,7 +146,7 @@ body p {
   margin-block-start: -35px;
 }
 .container-home__main-wrapperTop {
-  max-inline-size: 1440px;
+  max-inline-size: 1063px;
   margin: auto;
 }
 .container-home__main-wrapperTop-content {
@@ -571,6 +571,8 @@ body p {
   }
   .options-images .container-userSolicitud {
     margin-block-start: 25px;
+    block-size: 388.61px;
+    inline-size: 354.33px;
   }
   .options-images .container-userBusqueda {
     block-size: 388.61px;

@@ -27,13 +27,16 @@ function NavBar() {
         <Navbar.Brand exact to="/">
         <NavLink exact to="/"><img src={logoTipoIcon} alt="logo Sami" /></NavLink>
         </Navbar.Brand>
-        <button className="btnLogin">Iniciar sesión</button>
+        <button className="btnLogin">
+          <a className="aNoStyle" href="https://develop.d1m4mh8zc59yft.amplifyapp.com/" target="_blank" rel="noreferrer">Iniciar sesión</a>
+        </button>
         <Navbar.Toggle className="btnMenu" aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <NavLink exact to="/porqueSami" activeClassName="item-active">¿Por qué Sami?</NavLink>
+            <NavLink exact to="/porqueSami/" activeClassName="item-active">¿Por qué Sami?</NavLink>
             <NavLink exact to="/samiInsights" activeClassName="item-active">Sami Insights</NavLink>
-            <NavLink exact to="/404" activeClassName="item-active">Solicita un Demo</NavLink>
+            {/* <NavLink exact to="/#contactanos" activeClassName="item-active">Solicita un Demo</NavLink> */}
+            <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita un Demo</a>
           </Nav>
         </Navbar.Collapse>
       </Container>
