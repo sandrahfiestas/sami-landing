@@ -243,6 +243,11 @@ body p {
   }
 }
 @media screen and (min-width: 1024px) {
+  .container-home__main-wrapperTop-content {
+    background-image: url("../images/background-skyblue-D.png");
+    background-position-y: 182px;
+    background-size: auto 1065px;
+  }
   .container-home .content-descubre {
     padding-block-start: 55px;
     padding-inline-start: 74px;
@@ -292,7 +297,7 @@ body p {
 .container-navbar {
   top: 0;
   position: sticky;
-  z-index: 1;
+  z-index: 3;
 }
 
 .container-navbar .navbar {
@@ -441,6 +446,7 @@ body p {
   margin-block-start: 17px;
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 .options-images__left-brujula {
   block-size: 37.44px;
@@ -465,8 +471,10 @@ body p {
 .options-images .container-user {
   margin-block-start: -65px;
   block-size: 289px;
-  inline-size: 205px;
   overflow: hidden;
+  inline-size: 220px;
+  position: absolute;
+  margin-right: -16px;
 }
 .options-images-user {
   block-size: 289px;
@@ -674,6 +682,7 @@ body p {
 }
 .content-testimonios {
   margin-block-start: 30px;
+  margin-block-end: 46px;
   padding-inline-start: 11px;
   padding-inline-end: 11px;
   padding-block-start: 65px;
@@ -717,10 +726,11 @@ body p {
 }
 .content-testimonios .slider-container__slider-profile-top span {
   font-size: 22px;
-  line-height: 48px;
+  line-height: 28px;
   font-weight: 700;
 }
 .content-testimonios .slider-container__slider-profile-top p {
+  margin-block-start: 10px;
   inline-size: 215.87px;
   font-size: 12px;
   line-height: 15px;
@@ -738,6 +748,8 @@ body p {
   .content-testimonios {
     margin-block-start: 0px;
     padding-block-start: 0px;
+    block-size: auto;
+    margin-block-end: 100px;
   }
   .content-testimonios .itemSubtitulo {
     font-size: 1.2rem;
@@ -799,11 +811,12 @@ body p {
   }
 }
 .container-inspecciones {
-  margin-block-start: 50px;
+  max-inline-size: 1440px;
   padding-block-start: 33px;
   block-size: 344px;
   padding-inline: 27px 10px;
   background: #EFF2F9;
+  margin: auto;
 }
 .container-inspecciones .content-inspecciones {
   margin: auto;
@@ -912,7 +925,8 @@ body p {
 .container-planes {
   margin-block-start: 48px;
   padding-inline-start: 47px;
-  padding-inline-start: 11px;
+  padding-inline: 27px;
+  margin-block-end: 70px;
 }
 .container-planes__content {
   background: white;
@@ -927,6 +941,32 @@ body p {
   flex-direction: column;
   align-items: center;
 }
+.container-planes__content-container-options {
+  margin-bottom: 33px;
+}
+.container-planes__content-container .containerCards-M .carousel {
+  block-size: 577px;
+  inline-size: 341px;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-indicators {
+  top: -32px;
+  bottom: auto;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-indicators button {
+  height: 8.8px;
+  width: 8.8px;
+  border-radius: 50%;
+  border-top: 0;
+  border-bottom: 0;
+  background: #FF3355;
+  margin-inline: 8px;
+}
+.container-planes__content-container .containerCards-M .carousel .carousel-inner {
+  height: 100%;
+}
+.container-planes__content-container .containerCards-D {
+  display: none;
+}
 .container-planes__content-container-cards {
   margin-block-start: 27px;
 }
@@ -937,6 +977,7 @@ body p {
   border: 1px solid #DEDEDE;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
+  margin: auto;
 }
 .container-planes__content-container-cards-card-title {
   font-size: 2.2rem;
@@ -1035,6 +1076,12 @@ body p {
   .container-planes__content-container {
     margin-block-start: 37px;
   }
+  .container-planes__content-container .containerCards-M {
+    display: none;
+  }
+  .container-planes__content-container .containerCards-D {
+    display: block;
+  }
   .container-planes__content-container-cards {
     display: flex;
     justify-content: space-between;
@@ -1053,6 +1100,7 @@ body p {
     bottom: 40px;
   }
   .container-planes__content-container-cards .premium {
+    margin-block-start: 16px;
     block-size: 695px;
     inline-size: 335px;
   }

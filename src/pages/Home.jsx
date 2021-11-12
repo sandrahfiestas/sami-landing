@@ -70,6 +70,7 @@ function Home() {
       <main className="container-home__main">
         <div className="container-home__main-wrapperTop">
           <div className="container-home__main-wrapperTop-content">
+            {/* <div className="container-home__main-wrapperTop-content-background"></div> */}
             <section id="descubre" className="content-descubre">
               <div className="content-descubre__options">
                 <div className={showGestiona ? 'content-descubre__options-option btnActive' : 'content-descubre__options-option btnNoActive'} onClick={handleBtnGestiona}>

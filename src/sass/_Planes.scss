@@ -2,7 +2,10 @@
   // background: black;
   margin-block-start: 48px;
   padding-inline-start: 47px; 
-  padding-inline-start: 11px;
+  // padding-inline-start: 11px;
+  //
+  padding-inline: 27px;
+  margin-block-end: 70px;
   &__content {
     background: white;
     margin: auto;
@@ -19,7 +22,34 @@
       align-items: center;
 
       &-options {
-
+        margin-bottom: 33px;
+      }
+      .containerCards-M {
+        .carousel {
+          // background: pink;
+          block-size: 577px;
+          inline-size: 341px;
+          .carousel-indicators {
+            top: -32px;
+            bottom: auto;
+            button {
+              height: 8.8px;
+              width: 8.8px;
+              border-radius: 50%;
+              border-top: 0;
+              border-bottom: 0;
+              background: #FF3355;
+              //
+              margin-inline: 8px;
+            }
+          }
+          .carousel-inner {
+            height: 100%;
+          }
+        }
+      }
+      .containerCards-D {
+        display: none;
       }
       &-cards {
         // border: 1px solid pink;
@@ -34,6 +64,8 @@
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
           border-radius: 10px;
           // display: inline-block;
+          //
+          margin: auto;
           &-title {
             font-size: 2.2rem;
             line-height: 3.3rem;
@@ -132,6 +164,12 @@
       }
       &-container {
         margin-block-start: 37px;
+        .containerCards-M {
+          display: none;
+        }
+        .containerCards-D {
+          display: block;
+        }
         &-cards {
           display: flex;
           justify-content: space-between;
@@ -149,6 +187,7 @@
             bottom: 40px;
           }
           .premium {
+            margin-block-start: 16px;
             block-size: 695px;
             inline-size: 335px;
           }

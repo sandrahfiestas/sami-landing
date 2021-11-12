@@ -60,11 +60,26 @@
         background: $white;
         border-radius: 10px 10px 0 0 ;
         margin-inline: 16px;
+        // position: relative;
         background-image:  url("../images/background-skyblue.png");
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: 329px;
         background-size: auto 940.19px;
+        // &-background {
+        //   border: 1px solid red;
+        //   block-size: 940.19px;
+        //   inline-size: 396.61px;
+        //   background-image:  url("../images/background-skyblue.png");
+        //   background-repeat: no-repeat;
+        //   background-position-x: right;
+        //   background-position-y: 329px;
+        //   background-size: auto 940.19px;
+        //   // 
+        //   position: absolute;
+        //   right: -16px;
+        //   background-position-y: 320px;
+        // }
       }
     }
     .content-descubre {
@@ -156,6 +171,15 @@
 
 @media screen and (min-width: 1024px) {
   .container-home {
+    &__main {
+      &-wrapperTop {
+        &-content {
+          background-image:  url("../images/background-skyblue-D.png");
+          background-position-y: 182px;
+          background-size: auto 1065px;
+        }
+      }
+    }
     .content-descubre {
       padding-block-start: 55px;
       padding-inline-start: 74px;
