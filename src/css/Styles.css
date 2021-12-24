@@ -218,28 +218,40 @@ body p {
 @media screen and (min-width: 480px) {
   .container-home__hero {
     block-size: 768px;
-    background-image: url("../images/background-desktop.jpg");
+    margin-block-start: -6.9rem;
     background-size: contain;
+    background: linear-gradient(1deg, #FF3355 18.23%, #C50121 67.19%, #960019 92.19%);
+  }
+  .container-home__hero-capaBackground {
+    margin-top: 47px;
+    block-size: 560px;
+    background-image: url("../images/svg/capa-background.svg");
+    background-repeat: no-repeat;
+    max-inline-size: 1269px;
+    margin: auto;
+    background-position-y: 100px;
   }
   .container-home__main {
-    margin-block-start: -337px;
+    margin-block-start: -345px;
   }
 }
 @media screen and (min-width: 768px) {
   .container-home__hero-title {
+    padding-top: 123px;
     max-inline-size: 791px;
+    block-size: 257px;
     margin: auto;
     text-align: center;
-    padding-block-start: 123px;
-  }
-  .container-home__hero-title-hi {
-    font-size: 1.2rem;
+    padding-block-start: 0rem .container-home__hero-title -hi;
+    padding-block-start-font-size: 1.2rem;
   }
   .container-home__hero-title h1 {
     margin-block-start: 18px;
+    line-height: 40px;
   }
   .container-home__hero-title-description {
     margin-block-start: 3rem;
+    line-height: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -259,7 +271,7 @@ body p {
     padding-block: 6px;
     padding-inline: 6px;
     transform: rotate(90deg);
-    top: 162px;
+    top: 217px;
     right: auto;
     left: -140px;
   }
@@ -301,10 +313,9 @@ body p {
 }
 
 .container-navbar .navbar {
-  block-size: 5.9rem;
+  block-size: 5.3rem;
   max-inline-size: 1440px;
   margin: auto;
-  background: #8E122E;
 }
 .container-navbar .container {
   padding-left: 1.7rem;
@@ -324,7 +335,7 @@ body p {
   inline-size: 3rem;
   background-image: url(../images/menu.svg);
   position: absolute;
-  top: 0;
+  top: 12px;
   bottom: 0;
   margin: auto;
   right: 17px;
@@ -372,7 +383,7 @@ body p {
   height: 31px;
   width: 115px;
   position: absolute;
-  top: 14px;
+  top: 18px;
   right: 5.8rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -392,6 +403,9 @@ body p {
   }
 }
 @media screen and (min-width: 992px) {
+  .container-navbar .navbar {
+    block-size: 6.9rem;
+  }
   .container-navbar .container {
     padding-left: 6.5rem;
     padding-right: 20rem;

@@ -10,10 +10,11 @@
   .navbar {
     // --bs-dark-rgb: 106, 90, 205;
     // --bs-bg-opacity: 1;
-    block-size: 5.9rem;
+    // block-size: 5.9rem;
+    block-size: 5.3rem;
     max-inline-size: 1440px;
     margin: auto;
-    background: #8E122E;
+    // background: #8E122E;
     // background: radial-gradient(173.26% 94.27% at 50% 100%, #BA1930 70.83%, #9D142E 89.06%, #9D142E 89.07%, #8B112D 100%);
   }
   .container {
@@ -33,7 +34,7 @@
         inline-size: 3rem;
         background-image: url(../images/menu.svg);
         position: absolute;
-        top: 0;
+        top: 12px;
         bottom: 0;
         margin: auto;
         right: 17px;
@@ -85,7 +86,7 @@
   height: 31px;
   width: 115px;
   position: absolute;
-  top: 14px;
+  top: 18px;
   right: 5.8rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -113,6 +114,9 @@
 
 @media screen and (min-width: 992px) {
   .container-navbar {
+    .navbar {
+      block-size: 6.9rem;
+    }
     .container { //media-bootstrap
       padding-left: 6.5rem;
       padding-right: 20rem;

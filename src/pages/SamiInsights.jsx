@@ -60,7 +60,7 @@ function SamiInsights() {
                 <img src={personImage} alt="usuario" className="content-samiInsights__steps-person" />
               </div>
               <button>
-                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita una demo</a>
+                <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita una demo</a>
               </button>
             </section>
 
@@ -135,7 +135,7 @@ function SamiInsights() {
               </div>
               </div>
               <button>
-                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Contáctanos</a>
+                <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Contáctanos</a>
               </button>
             </section>
         </div>

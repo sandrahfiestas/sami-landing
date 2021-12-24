@@ -1,5 +1,5 @@
 import React from 'react';
-// import $ from 'jquery';
+import $ from 'jquery';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -8,17 +8,17 @@ import logoTipoIcon from '../images/logo-tipo.svg'
 
 function NavBar() {
   // cambio de color del navbar con Jquery
-  // $(function(){
-  //   $(window).scroll(function(){
-  //     var scroll = $(window).scrollTop();
-  //     if (scroll > 10) {
-  //       $(".navbar").css("background" , "#8E122E");
-  //     }
-  //     else{
-  //       $(".navbar").css("background" , "transparent");  
-  //     }
-  //   })
-  // })
+  $(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 10) {
+        $(".navbar").css("background" , "#8E122E");
+      }
+      else{
+        $(".navbar").css("background" , "transparent");  
+      }
+    })
+  })
 
   return (
     <div className="container-navbar">
@@ -36,7 +36,7 @@ function NavBar() {
             <NavLink exact to="/porqueSami/" activeClassName="item-active">¿Por qué Sami?</NavLink>
             <NavLink exact to="/samiInsights" activeClassName="item-active">Sami Insights</NavLink>
             {/* <NavLink exact to="/#contactanos" activeClassName="item-active">Solicita un Demo</NavLink> */}
-            <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita un Demo</a>
+            <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita un Demo</a>
           </Nav>
         </Navbar.Collapse>
       </Container>
