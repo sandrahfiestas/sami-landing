@@ -22,7 +22,7 @@ function NavBar() {
 
   return (
     <div className="container-navbar">
-    <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg">
+    <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg" style={{ backgroundColor: '#8E122E' }}>
       <Container>
         <Navbar.Brand exact to="/">
         <NavLink exact to="/"><img src={logoTipoIcon} alt="logo Sami" /></NavLink>
@@ -36,7 +36,7 @@ function NavBar() {
             <NavLink exact to="/porqueSami/" activeClassName="item-active">¿Por qué Sami?</NavLink>
             <NavLink exact to="/samiInsights" activeClassName="item-active">Sami Insights</NavLink>
             {/* <NavLink exact to="/#contactanos" activeClassName="item-active">Solicita un Demo</NavLink> */}
-            <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita un Demo</a>
+            <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita un Demo</a>
           </Nav>
         </Navbar.Collapse>
       </Container>

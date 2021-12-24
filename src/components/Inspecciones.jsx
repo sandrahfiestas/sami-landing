@@ -13,7 +13,7 @@ function Inspecciones() {
           <div className="content-inspecciones__container-description">
             <p>¿Aún con curiosidad?</p>
             <button>
-              <a className="aNoStyle" href="#contactanos">Solicita una demo</a>
+              <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita una demo</a>
             </button>
           </div>
           <div className="content-inspecciones__container-video">

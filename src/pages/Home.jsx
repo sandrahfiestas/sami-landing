@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
+import $ from 'jquery';
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import logoIcon from '../images/logo-tipo.svg'
+// import Navbar from '../components/Navbar';
 import OptionGestiona from '../components/OptionGestiona';
 import OptionSolicitud from '../components/OptionSolicitud';
 import OptionBusqueda from '../components/OptionBusqueda';
@@ -21,6 +27,19 @@ import searchWhiteIcon from '../images/search-white.png';
 import hamburgWhiteIcon from '../images/hambur-white.png';
 
 function Home() {
+    // cambio de color del navbar con Jquery
+  $(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 10) {
+        $(".navbarHome").css("background" , "#8E122E");
+      }
+      else{
+        $(".navbarHome").css("background" , "transparent");  
+      }
+    })
+  })
+
   const [showGestiona, setShowGestiona] = useState(true);
   const [showSolicitud, setShowSolicitud] = useState(false);
   const [showBusqueda, setShowBusqueda] = useState(false);
@@ -56,15 +75,37 @@ function Home() {
 
   return (
     <div className="container-home">
-      <Navbar />
+      <div className="container-navbar">
+        <Navbar className="navbar navbarHome" id="navbar" collapseOnSelect expand="lg" style={{ background: 'transparent' }}>
+          <Container>
+            <Navbar.Brand exact to="/">
+            <NavLink exact to="/"><img src={logoIcon} alt="logo Sami" /></NavLink>
+            </Navbar.Brand>
+            <button className="btnLogin">
+              <a className="aNoStyle" href="https://develop.d1m4mh8zc59yft.amplifyapp.com/" target="_blank" rel="noreferrer">Iniciar sesión</a>
+            </button>
+            <Navbar.Toggle className="btnMenu" aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav>
+                <NavLink exact to="/porqueSami/" activeClassName="item-active">¿Por qué Sami?</NavLink>
+                <NavLink exact to="/samiInsights" activeClassName="item-active">Sami Insights</NavLink>
+                {/* <NavLink exact to="/#contactanos" activeClassName="item-active">Solicita un Demo</NavLink> */}
+                <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita un Demo</a>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
       <div className="container-home__hero">
-        <div className="container-home__hero-title">
-          <p className="container-home__hero-title-hi">¡HOLA, SOMOS SAMI!</p>
-          <h1>Tus fiscalizaciones bajo control, más simples y transparentes</h1>
-          <p className="container-home__hero-title-description"><strong>Sami </strong>facilita la gestión de tus fiscalizaciones, cada caso y actuación. Controla y monitorea todo el proceso, identifica los pendientes más cercanos de tu cartera en tiempo real y potencia tu relación con SUNAFIL.</p>
-          <button>
-            <a className="aNoStyle" href="#descubre">Descubre cómo</a>
-          </button>
+        <div className="container-home__hero-capaBackground">
+          <div className="container-home__hero-title">
+            <p className="container-home__hero-title-hi">¡HOLA, SOMOS SAMI!</p>
+            <h1>Tus fiscalizaciones bajo control, <br /> más simples y transparentes</h1>
+            <p className="container-home__hero-title-description"><strong>Sami </strong>facilita la gestión de tus fiscalizaciones, cada caso y actuación. Controla y monitorea todo el proceso, identifica los pendientes más cercanos de tu cartera en tiempo real y potencia tu relación con SUNAFIL.</p>
+            <button>
+              <a className="aNoStyle" href="#descubre">Descubre cómo</a>
+            </button>
+          </div>
         </div>
       </div>
       <main className="container-home__main">
@@ -93,7 +134,7 @@ function Home() {
                {showBusqueda ? <OptionBusqueda /> : ''}
                {showJurisprudencia ? <OptionJurisprudencia /> : ''}
               <button>
-                <a className="aNoStyle" href="#contactanos">Solicita una demo </a>
+                <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita una demo </a>
               </button>
             </section>
             <Insights />

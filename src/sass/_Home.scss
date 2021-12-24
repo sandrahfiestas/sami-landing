@@ -137,12 +137,23 @@
   .container-home {
     &__hero {
     block-size: 768px;
-    background-image: url("../images/background-desktop.jpg");
+    margin-block-start: -6.9rem;
+    // background-image: url("../images/background-desktop.jpg");
     background-size: contain;
-    // background: radial-gradient(173.26% 94.27% at 50% 100%, #F68F44 0%, #EC0F42 37.5%, #E22033 46.35%, #8B112D 100%);
+    background: linear-gradient(1deg, #FF3355 18.23%, #C50121 67.19%, #960019 92.19%);
+      &-capaBackground {
+        margin-top: 47px;
+        block-size: 560px;
+        background-image: url("../images/svg/capa-background.svg");
+        background-repeat: no-repeat;
+        max-inline-size: 1269px;
+        margin: auto;
+        background-position-y: 100px;
+    }
     }
     &__main {
-      margin-block-start: -337px;
+      // margin-block-start: -337px;
+      margin-block-start: -345px;
     }
   }
 }
@@ -151,18 +162,22 @@
   .container-home {
     &__hero {
       &-title {
+        padding-top: 123px;
         max-inline-size: 791px;
+        block-size: 257px;
         margin: auto;
         text-align: center;
-        padding-block-start: 123px;
+        padding-block-start: 0rem
         &-hi {
           font-size: 1.2rem;
         }
         h1 {
           margin-block-start: 18px;
+          line-height: 40px;
         }
         &-description {
           margin-block-start: 3rem;
+          line-height: 20px;
         }
       }
     }
@@ -191,7 +206,8 @@
         padding-block: 6px;
         padding-inline: 6px;
         transform: rotate(90deg);
-        top: 162px;
+        // top: 162px;
+        top: 217px;
         right: auto;
         left: -140px;
         &-option {

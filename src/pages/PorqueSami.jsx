@@ -51,7 +51,7 @@ function PorqueSami() {
                 </div>
               </div>
               <button>
-                <a className="aNoStyle" href="http://localhost:3000/#contactanos">Solicita una demo</a>
+                <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Solicita una demo</a>
               </button>
             </section>
             <section className="content-coreSami">
