@@ -22,7 +22,7 @@ function NavBar() {
 
   return (
     <div className="container-navbar">
-    <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg">
+    <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg" style={{ backgroundColor: '#8E122E' }}>
       <Container>
         <Navbar.Brand exact to="/">
         <NavLink exact to="/"><img src={logoTipoIcon} alt="logo Sami" /></NavLink>

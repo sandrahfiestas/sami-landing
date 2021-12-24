@@ -17,7 +17,6 @@ function Footer() {
           <p className="container-footer__logoBtn-escribenos">Escríbenos.</p>
           <button>
             <a className="aNoStyle" href="https://sami-landing.netlify.app/#contactanos">Contáctanos</a>
-            {/* <a className="aNoStyle" href="#contactanos">Contáctanos</a> */}
           </button>
           </div>
         <div className="container-footer__info">

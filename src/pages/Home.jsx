@@ -32,10 +32,10 @@ function Home() {
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if (scroll > 10) {
-        $(".navbar").css("background" , "#8E122E");
+        $(".navbarHome").css("background" , "#8E122E");
       }
       else{
-        $(".navbar").css("background" , "transparent");  
+        $(".navbarHome").css("background" , "transparent");  
       }
     })
   })
@@ -76,7 +76,7 @@ function Home() {
   return (
     <div className="container-home">
       <div className="container-navbar">
-        <Navbar className="navbar" id="navbar" collapseOnSelect expand="lg" style={{ background: 'transparent' }}>
+        <Navbar className="navbar navbarHome" id="navbar" collapseOnSelect expand="lg" style={{ background: 'transparent' }}>
           <Container>
             <Navbar.Brand exact to="/">
             <NavLink exact to="/"><img src={logoIcon} alt="logo Sami" /></NavLink>
