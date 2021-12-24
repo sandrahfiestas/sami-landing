@@ -316,6 +316,7 @@ body p {
   block-size: 5.3rem;
   max-inline-size: 1440px;
   margin: auto;
+  background: #8E122E;
 }
 .container-navbar .container {
   padding-left: 1.7rem;

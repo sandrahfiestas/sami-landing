@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+// import $ from 'jquery';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -8,17 +8,17 @@ import logoTipoIcon from '../images/logo-tipo.svg'
 
 function NavBar() {
   // cambio de color del navbar con Jquery
-  $(function(){
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
-      if (scroll > 10) {
-        $(".navbar").css("background" , "#8E122E");
-      }
-      else{
-        $(".navbar").css("background" , "transparent");  
-      }
-    })
-  })
+  // $(function(){
+  //   $(window).scroll(function(){
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll > 10) {
+  //       $(".navbar").css("background" , "#8E122E");
+  //     }
+  //     else{
+  //       $(".navbar").css("background" , "transparent");  
+  //     }
+  //   })
+  // })
 
   return (
     <div className="container-navbar">
